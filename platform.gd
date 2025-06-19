@@ -1,6 +1,6 @@
 extends Area2D
 
-enum PlatformType {FIJA, MOVIL, DESAP, BRINCO}
+enum PlatformType {FIJA, MOVIL, DESAP, BRINCO, ICE}
 @export var type: PlatformType = PlatformType.FIJA;
 @export var rebote := 2.0
 
@@ -20,6 +20,8 @@ func ActuPlat():
 			$Sprite2D.modulate = Color.INDIAN_RED
 		PlatformType.BRINCO:
 			$Sprite2D.modulate = Color.GOLDENROD
+		PlatformType.ICE:
+			$Sprite2D.modulate = Color.CYAN
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("jugador"):
@@ -32,6 +34,8 @@ func _on_body_entered(body: Node2D) -> void:
 					body.puede_rebotar(rebote)
 				else: 
 					body.velocity.y = body.brinco * rebote
+			PlatformType.ICE:
+				body.velocity.x = body.velocidad * 2
 
 func PLAT_MOV():
 	var tween = create_tween()
