@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://by5tex0fj0f6h"]
+[gd_scene load_steps=11 format=4 uid="uid://by5tex0fj0f6h"]
 
 [ext_resource type="Texture2D" uid="uid://dylm0o3jtes0s" path="res://Assets/Exterior/tileset.png" id="1_t7py2"]
 [ext_resource type="Texture2D" uid="uid://b2qj6igrf284r" path="res://Door.png" id="2_mg4l6"]
 [ext_resource type="PackedScene" uid="uid://cq1xtg1s0eclh" path="res://personaje.tscn" id="2_t7py2"]
+[ext_resource type="PackedScene" uid="uid://dcx4e042sbcpo" path="res://platform.tscn" id="4_t7py2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j02nt"]
 texture = ExtResource("1_t7py2")
@@ -986,6 +987,10 @@ texture = ExtResource("2_mg4l6")
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_t7py2")]
 z_index = 4
 position = Vector2(152, 156)
+
+[node name="platform" parent="." instance=ExtResource("4_t7py2")]
+z_index = 50
+position = Vector2(-345, -143)
 
 [connection signal="body_entered" from="reset" to="CharacterBody2D" method="_on_reset_body_entered"]
 [connection signal="body_entered" from="puerta" to="CharacterBody2D" method="_on_puerta_body_entered"]
