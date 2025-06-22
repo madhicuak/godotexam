@@ -98,5 +98,7 @@ animation = &"derecha"
 shape = SubResource("CapsuleShape2D_ck3sb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(120, -20)
+position = Vector2(76, -20)
 zoom = Vector2(2, 2)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Camera2D"]
