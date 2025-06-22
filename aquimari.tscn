@@ -7,10 +7,11 @@
 [node name="aquimari" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_br7to")]
-position = Vector2(-1349, -39)
+position = Vector2(-1005, -25)
 
 [node name="enemy" parent="." instance=ExtResource("2_jn2ga")]
-position = Vector2(-1095, -55)
+position = Vector2(-1342, -125)
+collision_layer = 1
 
 [node name="platform" parent="." instance=ExtResource("1_d8npl")]
 position = Vector2(-1358, 1)
