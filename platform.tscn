@@ -13,19 +13,19 @@ size = Vector2(22, 60)
 script = ExtResource("1_s8bxr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(496, 324)
 scale = Vector2(1.25, 1.375)
 texture = ExtResource("1_mi635")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(496, 313)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_s8bxr")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(496, 324)
+position = Vector2(0, 11)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_c1gtx")
 debug_color = Color(1, 0, 0, 0.423529)

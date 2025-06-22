@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cejwene7o0l8"
-path="res://.godot/imported/far-grounds.png-14559db6e9f3ba0b46ce50ea92f67519.ctex"
+uid="uid://by6n3qg0mqlel"
+path="res://.godot/imported/tilesetswamp.png-87c6c6f0361b58864843604faa9e0c0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Exterior/far-grounds.png"
-dest_files=["res://.godot/imported/far-grounds.png-14559db6e9f3ba0b46ce50ea92f67519.ctex"]
+source_file="res://Assets/Exterior/tilesetswamp.png"
+dest_files=["res://.godot/imported/tilesetswamp.png-87c6c6f0361b58864843604faa9e0c0e.ctex"]
 
 [params]
 
