@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxq44i7b4olgl"]
+
+[ext_resource type="PackedScene" uid="uid://dcx4e042sbcpo" path="res://escenas/platform.tscn" id="1_d8npl"]
+[ext_resource type="PackedScene" uid="uid://cq1xtg1s0eclh" path="res://personaje.tscn" id="2_br7to"]
+[ext_resource type="PackedScene" uid="uid://xtbak4afw20s" path="res://enemy.tscn" id="2_jn2ga"]
+
+[node name="aquimari" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_br7to")]
+position = Vector2(-1349, -39)
+
+[node name="enemy" parent="." instance=ExtResource("2_jn2ga")]
+position = Vector2(-1095, -55)
+
+[node name="platform" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1358, 1)
+
+[node name="platform2" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1298, 1)
+
+[node name="platform3" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1238, 1)
+
+[node name="platform4" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1178, 1)
+
+[node name="platform5" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1118, 1)
+
+[node name="platform6" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-1058, 1)
+
+[node name="platform7" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-998, 1)
+
+[node name="platform8" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-938, 1)
+
+[node name="platform9" parent="." instance=ExtResource("1_d8npl")]
+position = Vector2(-878, 1)

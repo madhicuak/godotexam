@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dcx4e042sbcpo"]
 
-[ext_resource type="Texture2D" uid="uid://cg7gq2ou1ygt8" path="res://Platform.png" id="1_mi635"]
+[ext_resource type="Texture2D" uid="uid://cg7gq2ou1ygt8" path="res://escenas/Platform.png" id="1_mi635"]
 [ext_resource type="Script" uid="uid://co7iau34jq64o" path="res://platform.gd" id="1_s8bxr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
@@ -14,7 +14,7 @@ script = ExtResource("1_s8bxr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(496, 324)
+position = Vector2(6.10352e-05, 11.0001)
 scale = Vector2(1.25, 1.375)
 texture = ExtResource("1_mi635")
 
