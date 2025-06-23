@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk4gvjmbn22tw"
-path="res://.godot/imported/oldman-idle.png-f169b09d225d89336210eb35e4b953b0.ctex"
+uid="uid://com4hk15bmsat"
+path="res://.godot/imported/oldman-walk.png-8570137b460e2e6a81ffe15f20102b72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/npcs/oldman-idle.png"
-dest_files=["res://.godot/imported/oldman-idle.png-f169b09d225d89336210eb35e4b953b0.ctex"]
+source_file="res://Assets/Exterior/npcs/oldman-walk.png"
+dest_files=["res://.godot/imported/oldman-walk.png-8570137b460e2e6a81ffe15f20102b72.ctex"]
 
 [params]
 

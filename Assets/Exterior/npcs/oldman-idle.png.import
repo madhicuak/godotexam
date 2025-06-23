@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q5gn0msyco1r"
-path="res://.godot/imported/woman-walk.png-effe2c5a4fe3c4ac4c6042c88b909435.ctex"
+uid="uid://dk4gvjmbn22tw"
+path="res://.godot/imported/oldman-idle.png-bc2718984bc893dadaba73d21a47c8b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/npcs/woman-walk.png"
-dest_files=["res://.godot/imported/woman-walk.png-effe2c5a4fe3c4ac4c6042c88b909435.ctex"]
+source_file="res://Assets/Exterior/npcs/oldman-idle.png"
+dest_files=["res://.godot/imported/oldman-idle.png-bc2718984bc893dadaba73d21a47c8b9.ctex"]
 
 [params]
 

@@ -10,12 +10,12 @@ size = Vector2(56, 20)
 
 [node name="plataformainteriordos" type="Area2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_0e6he")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -4)
 shape = SubResource("RectangleShape2D_30rki")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0e6he")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

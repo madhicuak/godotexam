@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ktw0f0ah2o5f"
-path="res://.godot/imported/woman-idle.png-f52dae93543126dcf5425a8901627609.ctex"
+path="res://.godot/imported/woman-idle.png-6371700716716775a57f93b85d3b2354.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/npcs/woman-idle.png"
-dest_files=["res://.godot/imported/woman-idle.png-f52dae93543126dcf5425a8901627609.ctex"]
+source_file="res://Assets/Exterior/npcs/woman-idle.png"
+dest_files=["res://.godot/imported/woman-idle.png-6371700716716775a57f93b85d3b2354.ctex"]
 
 [params]
 

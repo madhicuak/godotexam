@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b305tvl6q6oo8"
-path="res://.godot/imported/hat-man-walk.png-28526b7fac386718bb0891b67139b804.ctex"
+uid="uid://d25rtj0iux102"
+path="res://.godot/imported/bearded-walk.png-643745b1cbd3e3516f9254edb98c932e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/npcs/hat-man-walk.png"
-dest_files=["res://.godot/imported/hat-man-walk.png-28526b7fac386718bb0891b67139b804.ctex"]
+source_file="res://Assets/Exterior/npcs/bearded-walk.png"
+dest_files=["res://.godot/imported/bearded-walk.png-643745b1cbd3e3516f9254edb98c932e.ctex"]
 
 [params]
 

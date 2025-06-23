@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://cp0mm455prqti"]
+[gd_scene load_steps=23 format=4 uid="uid://cp0mm455prqti"]
 
 [ext_resource type="Texture2D" uid="uid://dp6x76kl7hww4" path="res://Assets/interior/tileset.png" id="1_ypuf3"]
 [ext_resource type="Texture2D" uid="uid://bo2d0ekqnt2w8" path="res://Assets/interior/column.png" id="2_7ejnb"]
@@ -9,8 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://m67t8g7xcdwq" path="res://Assets/moneda/coinmari.png" id="7_6w3mh"]
 [ext_resource type="Script" uid="uid://d2enuprw8okyw" path="res://UI.gd" id="7_iqs48"]
 [ext_resource type="PackedScene" uid="uid://dnsdwac6jpiqu" path="res://Assets/interior/plataformainterior.tscn" id="9_2wngq"]
+[ext_resource type="Script" uid="uid://kvjgavgx788s" path="res://Assets/interior/plataformainterior.gd" id="10_8pdw4"]
 [ext_resource type="PackedScene" uid="uid://be03sbn80opkx" path="res://Assets/interior/plataformainteriordos.tscn" id="10_gv80v"]
 [ext_resource type="PackedScene" uid="uid://bggjfxcctvt3s" path="res://Assets/interior/area_2d.tscn" id="11_ec7fl"]
+[ext_resource type="Script" uid="uid://cfpa6owmodu4v" path="res://Assets/interior/plataformainteriordos.gd" id="11_he27a"]
+[ext_resource type="Script" uid="uid://dcotaa2htggb3" path="res://Assets/interior/area_2d.gd" id="14_mkh75"]
 
 [sub_resource type="GDScript" id="GDScript_qa63q"]
 script/source = "extends Node2D
@@ -660,27 +663,6 @@ position = Vector2(-408, -13)
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(408, 13)
 
-[node name="piso" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(-346, 5)
-
-[node name="piso5" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(-430, 6)
-
-[node name="piso2" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(-181, 5)
-
-[node name="piso3" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(-15, 5)
-
-[node name="piso4" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(149, 5)
-
-[node name="piso7" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(636, 6)
-
-[node name="piso9" parent="." instance=ExtResource("6_qa63q")]
-position = Vector2(966, 6)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
 script = ExtResource("7_iqs48")
@@ -712,20 +694,51 @@ offset_right = -351.0
 offset_bottom = -155.0
 text = "0"
 
-[node name="Area2D" parent="." instance=ExtResource("9_2wngq")]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="piso" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(-346, 5)
+
+[node name="piso5" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(-430, 6)
+
+[node name="piso2" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(-181, 5)
+
+[node name="piso3" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(-15, 5)
+
+[node name="piso4" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(149, 5)
+
+[node name="piso7" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(637, 9)
+
+[node name="piso9" parent="Node2D" instance=ExtResource("6_qa63q")]
+position = Vector2(966, 6)
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Node2D2" instance=ExtResource("9_2wngq")]
 position = Vector2(249, -7)
+script = ExtResource("10_8pdw4")
 
-[node name="Area2D2" parent="." instance=ExtResource("9_2wngq")]
-position = Vector2(314, -22)
-
-[node name="plataformainteriordos" parent="." instance=ExtResource("10_gv80v")]
+[node name="plataformainteriordos" parent="Node2D2" instance=ExtResource("10_gv80v")]
 position = Vector2(784, 1)
+script = ExtResource("11_he27a")
 
-[node name="Area2D3" parent="." instance=ExtResource("9_2wngq")]
-position = Vector2(848, 54)
+[node name="Area2D3" parent="Node2D2" instance=ExtResource("9_2wngq")]
+position = Vector2(842, 14)
+script = ExtResource("10_8pdw4")
 
-[node name="Area2D4" parent="." instance=ExtResource("9_2wngq")]
+[node name="Area2D4" parent="Node2D2" instance=ExtResource("9_2wngq")]
 position = Vector2(382, -63)
+script = ExtResource("10_8pdw4")
 
-[node name="Area2D6" parent="." instance=ExtResource("11_ec7fl")]
-position = Vector2(521, -108)
+[node name="Area2D2" parent="Node2D2" instance=ExtResource("9_2wngq")]
+position = Vector2(314, -22)
+script = ExtResource("10_8pdw4")
+
+[node name="Area2D6" parent="Node2D2" instance=ExtResource("11_ec7fl")]
+position = Vector2(483, -31)
+script = ExtResource("14_mkh75")
