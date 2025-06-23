@@ -5,6 +5,7 @@ var brinco = -400
 var gravedad = 1000
 @onready var sprite = $AnimatedSprite2D
 var ultima_direccion = 1  
+var monedas: int = 0
 
 func _ready():
 	add_to_group("jugador")
@@ -43,3 +44,5 @@ func _on_reset_body_entered(body: Node2D) -> void:
 
 func _on_puerta_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("")
+
+#________script_________contador_____________________

@@ -1,11 +1,12 @@
 extends CanvasLayer
 
-#@onready var contador_monedas: Label = $ContadorMonedas
+var contador = 0
+func _ready():
+	for moneda in get_tree().get_first_node_in_group("monedas"):
+		moneda.connect("moneditas" , callable(self, "handlemoneditas"))
+		$Contador.text = str (contador)
 
-#func _ready() -> void:
-#	var game_manager = get_node("%GameManager")
-#	game_manager.puntuacion_actualizada.connect(_on_puntuacion_actualizada)
-	
-#func _on_puntuacion_actualizada(puntuacion_actual:int)->void:
-	#contador_monedas.text = str(puntuacion_actual)
+func handlmoneitas():
+	print("monedas")
+	contador +=1 
 	
