@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnsdwac6jpiqu"]
+
+[ext_resource type="Texture2D" uid="uid://djk3ydhq5p53j" path="res://Assets/interior/tileset2.png" id="1_74cdf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5nvbi"]
+size = Vector2(34.5, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j8xov"]
+size = Vector2(52.5, 20)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, -9)
+scale = Vector2(1.04762, 0.919643)
+texture = ExtResource("1_74cdf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.75, -9.5)
+shape = SubResource("RectangleShape2D_5nvbi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(12.75, -8)
+shape = SubResource("RectangleShape2D_j8xov")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://be03sbn80opkx"]
+
+[ext_resource type="Texture2D" uid="uid://b2803y46die2o" path="res://Assets/interior/tilesetuno.png" id="1_0e6he"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30rki"]
+size = Vector2(56, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bwde"]
+size = Vector2(56, 20)
+
+[node name="plataformainteriordos" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0e6he")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -4)
+shape = SubResource("RectangleShape2D_30rki")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2, 7)
+shape = SubResource("RectangleShape2D_2bwde")
