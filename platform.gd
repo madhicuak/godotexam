@@ -2,7 +2,7 @@ extends Area2D
 
 enum PlatformType {FIJA, MOVIL, DESAP, BRINCO, ICE}
 @export var type: PlatformType = PlatformType.FIJA;
-@export var rebote := 2.0
+@export var rebote := 1.5
 
 func _ready():
 	ActuPlat()
