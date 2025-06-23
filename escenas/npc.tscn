@@ -1,14 +1,14 @@
 [gd_scene load_steps=67 format=3 uid="uid://ctg6el7xrlbb5"]
 
 [ext_resource type="Script" uid="uid://cfnqkj3583pqc" path="res://escenas/npc.gd" id="1_psg2s"]
-[ext_resource type="Texture2D" uid="uid://ckny7q0ci8gvl" path="res://escenas/npcs/bearded-idle.png" id="2_on2kp"]
-[ext_resource type="Texture2D" uid="uid://d25rtj0iux102" path="res://escenas/npcs/bearded-walk.png" id="3_02oly"]
-[ext_resource type="Texture2D" uid="uid://d1wgbmonqdccc" path="res://escenas/npcs/hat-man-idle.png" id="4_mpmfv"]
-[ext_resource type="Texture2D" uid="uid://b305tvl6q6oo8" path="res://escenas/npcs/hat-man-walk.png" id="5_7xv0j"]
-[ext_resource type="Texture2D" uid="uid://dk4gvjmbn22tw" path="res://escenas/npcs/oldman-idle.png" id="6_p6gmm"]
-[ext_resource type="Texture2D" uid="uid://com4hk15bmsat" path="res://escenas/npcs/oldman-walk.png" id="7_a8ubc"]
-[ext_resource type="Texture2D" uid="uid://ktw0f0ah2o5f" path="res://escenas/npcs/woman-idle.png" id="8_snrc8"]
-[ext_resource type="Texture2D" uid="uid://q5gn0msyco1r" path="res://escenas/npcs/woman-walk.png" id="9_1rbxy"]
+[ext_resource type="Texture2D" uid="uid://ckny7q0ci8gvl" path="res://Assets/Exterior/npcs/bearded-idle.png" id="2_on2kp"]
+[ext_resource type="Texture2D" uid="uid://d25rtj0iux102" path="res://Assets/Exterior/npcs/bearded-walk.png" id="3_02oly"]
+[ext_resource type="Texture2D" uid="uid://d1wgbmonqdccc" path="res://Assets/Exterior/npcs/hat-man-idle.png" id="4_mpmfv"]
+[ext_resource type="Texture2D" uid="uid://b305tvl6q6oo8" path="res://Assets/Exterior/npcs/hat-man-walk.png" id="5_7xv0j"]
+[ext_resource type="Texture2D" uid="uid://dk4gvjmbn22tw" path="res://Assets/Exterior/npcs/oldman-idle.png" id="6_p6gmm"]
+[ext_resource type="Texture2D" uid="uid://com4hk15bmsat" path="res://Assets/Exterior/npcs/oldman-walk.png" id="7_a8ubc"]
+[ext_resource type="Texture2D" uid="uid://ktw0f0ah2o5f" path="res://Assets/Exterior/npcs/woman-idle.png" id="8_snrc8"]
+[ext_resource type="Texture2D" uid="uid://q5gn0msyco1r" path="res://Assets/Exterior/npcs/woman-walk.png" id="9_1rbxy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
 size = Vector2(21.25, 19)
@@ -455,4 +455,4 @@ debug_color = Color(1, 0, 0, 0.423529)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c1e6i")
-animation = &"barbon"
+animation = &"woman"

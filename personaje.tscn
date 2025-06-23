@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cq1xtg1s0eclh"]
+[gd_scene load_steps=32 format=3 uid="uid://cq1xtg1s0eclh"]
 
 [ext_resource type="Script" uid="uid://bx0gq2h6le7eh" path="res://character_body_2d.gd" id="1_ltgau"]
 [ext_resource type="Texture2D" uid="uid://dwl2kyoq0wva5" path="res://Assets/personaje/walk1.png" id="2_35kqm"]
@@ -15,6 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://cfqalp3ckcq44" path="res://Assets/personaje/idle4.png" id="13_3rvlt"]
 [ext_resource type="Texture2D" uid="uid://b53o8qc5ddaar" path="res://Assets/personaje/jump1.png" id="14_cgtbb"]
 [ext_resource type="Texture2D" uid="uid://yxemigsav162" path="res://Assets/personaje/jump2.png" id="15_8huex"]
+[ext_resource type="Texture2D" uid="uid://y0a8m4sxs04a" path="res://Assets/ui/panel-transparent-border-026.png" id="16_wyluk"]
+[ext_resource type="Texture2D" uid="uid://2fsg2l2lyp2f" path="res://Assets/ui/divider-fade-001.png" id="17_n8vmr"]
+[ext_resource type="Texture2D" uid="uid://m67t8g7xcdwq" path="res://Assets/moneda/coinmari.png" id="18_n8vmr"]
+[ext_resource type="Script" uid="uid://u5suj7xateqt" path="res://moneda.gd" id="19_vopn2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gj0cs"]
 animations = [{
@@ -85,6 +89,77 @@ animations = [{
 radius = 6.0
 height = 18.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vopn2"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rvlt"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgtbb"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8huex"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpyix"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcxej"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pe31f"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2l4a"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hujys"]
+atlas = ExtResource("18_n8vmr")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_585sv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vopn2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rvlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgtbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8huex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpyix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcxej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pe31f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2l4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hujys")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ltgau")
 
@@ -102,3 +177,35 @@ position = Vector2(76, -20)
 zoom = Vector2(2, 2)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Camera2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="vida_tres" type="Sprite2D" parent="Node2D"]
+position = Vector2(-135, -167.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("16_wyluk")
+
+[node name="vida_dos" type="Sprite2D" parent="Node2D"]
+position = Vector2(-165, -167.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("16_wyluk")
+
+[node name="vida_uno" type="Sprite2D" parent="Node2D"]
+position = Vector2(-195, -167.6)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("16_wyluk")
+
+[node name="Divider-fade-001" type="Sprite2D" parent="Node2D"]
+position = Vector2(-168, -150.6)
+texture = ExtResource("17_n8vmr")
+
+[node name="Moneda" type="AnimatedSprite2D" parent="Node2D"]
+position = Vector2(-103, -167)
+sprite_frames = SubResource("SpriteFrames_585sv")
+script = ExtResource("19_vopn2")
+
+[node name="MonedaNum" type="Label" parent="Node2D"]
+offset_left = -90.0
+offset_top = -178.0
+offset_right = -50.0
+offset_bottom = -155.0

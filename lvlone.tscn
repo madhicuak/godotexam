@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://by5tex0fj0f6h"]
+[gd_scene load_steps=49 format=4 uid="uid://by5tex0fj0f6h"]
 
 [ext_resource type="Texture2D" uid="uid://dylm0o3jtes0s" path="res://Assets/Exterior/tileset.png" id="1_t7py2"]
 [ext_resource type="Texture2D" uid="uid://by6n3qg0mqlel" path="res://Assets/Exterior/tilesetswamp.png" id="2_j02nt"]
@@ -17,7 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://ifh57iwtgktj" path="res://escenas/colision_grande.tscn" id="11_6a65a"]
 [ext_resource type="PackedScene" uid="uid://erbha0lgeowl" path="res://escenas/piso.tscn" id="13_6a65a"]
 [ext_resource type="PackedScene" uid="uid://n28lc1keah7c" path="res://escenas/plat_desap.tscn" id="13_i3lfr"]
-[ext_resource type="PackedScene" path="res://escenas/npc.tscn" id="18_knn22"]
+[ext_resource type="PackedScene" uid="uid://dcx4e042sbcpo" path="res://escenas/platform.tscn" id="14_irq7o"]
+[ext_resource type="PackedScene" uid="uid://ctg6el7xrlbb5" path="res://escenas/npc.tscn" id="18_knn22"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j02nt"]
 texture = ExtResource("1_t7py2")
@@ -6605,7 +6606,7 @@ position = Vector2(336, 176)
 position = Vector2(256, 208)
 
 [node name="plat_grande" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
-position = Vector2(160, 177)
+position = Vector2(118, 230)
 
 [node name="plat_grande2" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
 position = Vector2(1120, 111)
@@ -6618,6 +6619,9 @@ position = Vector2(1737, 87)
 
 [node name="plat_grande4" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
 position = Vector2(1525, 169)
+
+[node name="plat_grande7" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
+position = Vector2(1341, 27)
 
 [node name="plat_media" parent="mapa/Plataformas" instance=ExtResource("11_0ll8e")]
 position = Vector2(433, 176)
@@ -6654,6 +6658,15 @@ position = Vector2(2167, -46)
 [node name="plat_grande6" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
 visible = false
 position = Vector2(1848, 16)
+
+[node name="plat_grande8" parent="mapa/Plataformas" instance=ExtResource("11_6a65a")]
+visible = false
+position = Vector2(1918, 16)
+
+[node name="platform" parent="mapa/Plataformas" instance=ExtResource("14_irq7o")]
+visible = false
+position = Vector2(1246, 195)
+type = 3
 
 [node name="Pisos" type="Node2D" parent="mapa"]
 z_index = 101
@@ -6709,6 +6722,23 @@ position = Vector2(365, 333)
 rotation = 1.5708
 scale = Vector2(0.6, 1)
 
+[node name="piso13" parent="mapa/Pisos" instance=ExtResource("13_6a65a")]
+position = Vector2(579, 119)
+rotation = 1.5708
+scale = Vector2(0.4, 1)
+
+[node name="piso14" parent="mapa/Pisos" instance=ExtResource("13_6a65a")]
+position = Vector2(830, 122)
+rotation = 1.5708
+scale = Vector2(0.4, 1)
+
+[node name="piso15" parent="mapa/Pisos" instance=ExtResource("13_6a65a")]
+position = Vector2(830, 122)
+rotation = 1.5708
+scale = Vector2(0.4, 1)
+
+[node name="Parallax" type="Node2D" parent="mapa"]
+
 [node name="puerta" type="Area2D" parent="."]
 visible = false
 
@@ -6740,7 +6770,7 @@ z_index = 6
 position = Vector2(54, 301)
 
 [node name="NPC" parent="." instance=ExtResource("18_knn22")]
-position = Vector2(238, 48)
+position = Vector2(247, 42)
 
 [connection signal="body_entered" from="puerta" to="CharacterBody2D" method="_on_puerta_body_entered"]
 [connection signal="body_entered" from="reset" to="CharacterBody2D" method="_on_reset_body_entered"]
