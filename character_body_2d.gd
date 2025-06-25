@@ -9,10 +9,12 @@ var vidas = 3
 var puede_moverse := true
 var recibe_daño := false
 
+
 func _ready():
 	add_to_group("jugador")
 	AnimVidas()
 	$Camera2D/ui/GameOver.visible = false
+
 
 func _physics_process(delta):
 	if puede_moverse:
@@ -31,7 +33,6 @@ func _physics_process(delta):
 	
 	if puede_moverse:
 		actualizar_animaciones(Input.get_axis("ui_left", "ui_right"))
-
 
 
 func actualizar_animaciones(direccion):
@@ -69,9 +70,12 @@ func ReducirVidas() -> void:
 		vidas -= 1
 		puede_moverse = false
 		AnimVidas()
+		sprite.play("daño")
+		velocity = Vector2(-ultima_direccion * 500, -100)
 		$Camera2D/ui/GameOver.visible = true
 		await get_tree().create_timer(2.0).timeout
 		get_tree().reload_current_scene()
+
 
 func AnimVidas():
 	if vidas == 3:
@@ -90,7 +94,7 @@ func AnimVidas():
 		$Camera2D/ui/vida_uno.visible = true
 		$Camera2D/ui/sano.visible = false
 		$Camera2D/ui/herido.visible = false
-	elif vidas == 0:
+	elif vidas <= 0:
 		$Camera2D/ui/vida_tres.visible = false
 		$Camera2D/ui/vida_dos.visible = false
 		$Camera2D/ui/vida_uno.visible = false
@@ -99,6 +103,7 @@ func AnimVidas():
 		$Camera2D/ui/moribundo.visible = false
 	else:
 		pass
+
 
 func _on_reset_body_entered(body: Node2D) -> void:
 	vidas -=3

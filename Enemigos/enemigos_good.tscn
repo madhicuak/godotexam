@@ -1,7 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxkxf06vj08xy"]
+[gd_scene load_steps=11 format=3 uid="uid://cxkxf06vj08xy"]
 
 [ext_resource type="Script" uid="uid://yh7rsn52u5ef" path="res://enemigos_good.gd" id="1_euctt"]
 [ext_resource type="Texture2D" uid="uid://capqp61u7k1y5" path="res://icon.svg" id="2_tiqiw"]
+[ext_resource type="Texture2D" uid="uid://bjedrx6sy42sb" path="res://Enemigos/walk thing/thing1.png" id="3_327pm"]
+[ext_resource type="Texture2D" uid="uid://bd6t5wou4yyux" path="res://Enemigos/walk thing/thing2.png" id="4_fh1kn"]
+[ext_resource type="Texture2D" uid="uid://blqj6ix8lvl1e" path="res://Enemigos/walk thing/thing3.png" id="5_d0wly"]
+[ext_resource type="Texture2D" uid="uid://dgfwyepeitrwf" path="res://Enemigos/walk thing/thing4.png" id="6_2lbax"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q5m73"]
 
@@ -13,6 +17,23 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_327pm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fh1kn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d0wly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2lbax")
+}],
+"loop": true,
+"name": &"moco",
 "speed": 5.0
 }]
 
@@ -29,8 +50,9 @@ script = ExtResource("1_euctt")
 shape = SubResource("CapsuleShape2D_q5m73")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
+position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_lsc76")
+animation = &"moco"
 
 [node name="hitbox" type="Area2D" parent="."]
 

@@ -1,18 +1,29 @@
-[gd_scene load_steps=36 format=3 uid="uid://cq1xtg1s0eclh"]
+[gd_scene load_steps=49 format=3 uid="uid://cq1xtg1s0eclh"]
 
 [ext_resource type="Script" uid="uid://bx0gq2h6le7eh" path="res://character_body_2d.gd" id="1_ltgau"]
 [ext_resource type="Texture2D" uid="uid://dwl2kyoq0wva5" path="res://Assets/personaje/walk1.png" id="2_35kqm"]
+[ext_resource type="Texture2D" uid="uid://bh7fv14my2mwd" path="res://Assets/personaje/punch1.png" id="2_d6vrp"]
 [ext_resource type="Texture2D" uid="uid://cwh4521eu1xv3" path="res://Assets/personaje/fall1.png" id="2_h755h"]
 [ext_resource type="Texture2D" uid="uid://bcuyivunqsfd4" path="res://Assets/personaje/walk2.png" id="3_1y5k2"]
+[ext_resource type="Texture2D" uid="uid://dgdu8pxd7tqqx" path="res://Assets/personaje/punch2.png" id="3_f0sqd"]
 [ext_resource type="Texture2D" uid="uid://d3jlq1bq884b7" path="res://Assets/personaje/fall2.png" id="3_pyv6t"]
+[ext_resource type="Texture2D" uid="uid://cgnf4u3ns0q68" path="res://Assets/personaje/punch3.png" id="4_b2nqx"]
 [ext_resource type="Texture2D" uid="uid://4tena0ewk6gf" path="res://Assets/personaje/walk3.png" id="4_f8plh"]
 [ext_resource type="Texture2D" uid="uid://btlemt861m8t7" path="res://Assets/personaje/hurt1.png" id="4_y2l4a"]
 [ext_resource type="Texture2D" uid="uid://kh0iqe2qvr1" path="res://Assets/personaje/hurt2.png" id="5_hujys"]
+[ext_resource type="Texture2D" uid="uid://hwujqiwabcrp" path="res://Assets/personaje/punch4.png" id="5_kwltd"]
 [ext_resource type="Texture2D" uid="uid://cgpxqeye1q43g" path="res://Assets/personaje/walk4.png" id="5_pqm5q"]
+[ext_resource type="Texture2D" uid="uid://cafvfnsi0udfr" path="res://Assets/personaje/punch5.png" id="6_0xjar"]
 [ext_resource type="Texture2D" uid="uid://db3u1w2mgdro8" path="res://Assets/personaje/walk5.png" id="6_2vb47"]
+[ext_resource type="Texture2D" uid="uid://bk2wh0rg1c4g0" path="res://Assets/personaje/punch6.png" id="7_8segr"]
 [ext_resource type="Texture2D" uid="uid://07f1vyj82xpc" path="res://Assets/personaje/walk6.png" id="7_xeorn"]
+[ext_resource type="Texture2D" uid="uid://dys88cljmt0ue" path="res://Assets/personaje/kick1.png" id="8_8segr"]
+[ext_resource type="Texture2D" uid="uid://dwa77uof6wcq6" path="res://Assets/personaje/kick2.png" id="9_t5t66"]
+[ext_resource type="Texture2D" uid="uid://ookw2ii8aqpf" path="res://Assets/personaje/kick3.png" id="10_83km4"]
 [ext_resource type="Texture2D" uid="uid://cbcwpulc4uw1v" path="res://Assets/personaje/idle1.png" id="10_wyluk"]
 [ext_resource type="Texture2D" uid="uid://cb7qdqpt4nn4w" path="res://Assets/personaje/idle2.png" id="11_n8vmr"]
+[ext_resource type="Texture2D" uid="uid://c06w55yxtf84x" path="res://Assets/personaje/kick4.png" id="11_ypa8i"]
+[ext_resource type="Texture2D" uid="uid://btbd3k7jn5njy" path="res://Assets/personaje/kick5.png" id="12_hmipk"]
 [ext_resource type="Texture2D" uid="uid://bubr3eglgx1ux" path="res://Assets/personaje/idle3.png" id="12_vopn2"]
 [ext_resource type="Texture2D" uid="uid://cfqalp3ckcq44" path="res://Assets/personaje/idle4.png" id="13_3rvlt"]
 [ext_resource type="Texture2D" uid="uid://b53o8qc5ddaar" path="res://Assets/personaje/jump1.png" id="14_cgtbb"]
@@ -31,9 +42,53 @@
 [ext_resource type="Texture2D" uid="uid://bdi3r5hf71r0l" path="res://Assets/ui/ChatGPT Image 24 jun 2025, 05_37_39 p.m..png" id="27_q2cvw"]
 [ext_resource type="Texture2D" uid="uid://cmk5gtjaa7up8" path="res://Assets/ui/divider-fade-005.png" id="28_x7w2g"]
 [ext_resource type="Texture2D" uid="uid://rrg6ywoa0avv" path="res://Assets/ui/panel-transparent-center-020.png" id="29_x7w2g"]
+[ext_resource type="Texture2D" uid="uid://c6flxy6sswb32" path="res://Assets/moneda/coinmari_ui.png" id="39_t5t66"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gj0cs"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_d6vrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f0sqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b2nqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kwltd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0xjar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8segr")
+}],
+"loop": true,
+"name": &"atk_g",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_8segr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_t5t66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_83km4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ypa8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hmipk")
+}],
+"loop": true,
+"name": &"atk_p",
+"speed": 15.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_h755h")
@@ -112,6 +167,11 @@ animations = [{
 radius = 6.0
 height = 18.0
 
+[sub_resource type="LabelSettings" id="LabelSettings_83km4"]
+font_size = 40
+font_color = Color(0.490196, 0.486275, 0, 0)
+outline_size = 4
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_585sv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hujys"]
@@ -125,7 +185,7 @@ script = ExtResource("1_ltgau")
 position = Vector2(1, -15)
 scale = Vector2(0.810976, 0.791667)
 sprite_frames = SubResource("SpriteFrames_gj0cs")
-animation = &"idle"
+animation = &"derecha"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ck3sb")
@@ -177,10 +237,13 @@ scale = Vector2(1.2, 1.2)
 texture = ExtResource("17_n8vmr")
 
 [node name="MonedaNum" type="Label" parent="Camera2D/ui"]
-offset_left = 162.0
-offset_top = -60.0
-offset_right = 193.0
-offset_bottom = -37.0
+offset_left = 122.0
+offset_top = 74.0
+offset_right = 173.0
+offset_bottom = 129.0
+label_settings = SubResource("LabelSettings_83km4")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Panel-007" type="TextureRect" parent="Camera2D/ui"]
 visible = false
@@ -242,6 +305,14 @@ offset_top = 41.0
 offset_right = 187.0
 offset_bottom = 85.0
 texture = ExtResource("24_mcxej")
+
+[node name="CoinmariUi" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 114.0
+offset_top = 112.0
+offset_right = 146.0
+offset_bottom = 144.0
+scale = Vector2(2, 2)
+texture = ExtResource("39_t5t66")
 
 [node name="GameOver" type="CanvasLayer" parent="Camera2D/ui"]
 visible = false
