@@ -7,7 +7,7 @@
 size = Vector2(21.25, 60)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c1gtx"]
-size = Vector2(22, 60)
+size = Vector2(60, 11)
 
 [node name="platform" type="Area2D"]
 script = ExtResource("1_s8bxr")
@@ -25,9 +25,9 @@ shape = SubResource("RectangleShape2D_s8bxr")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 11)
-rotation = 1.5708
+position = Vector2(0, 5.5)
 shape = SubResource("RectangleShape2D_c1gtx")
+one_way_collision = true
 debug_color = Color(1, 0, 0, 0.423529)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

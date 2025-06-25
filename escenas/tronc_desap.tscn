@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=4]
+
+[ext_resource type="Script" uid="uid://7t4xek6suswx" path="res://tronc_desap.gd" id="1_7c3wk"]
+[ext_resource type="Texture2D" uid="uid://d2yn1vsyrfhpj" path="res://Assets/Exterior/woods.png" id="2_hjnwv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oi1tn"]
+texture = ExtResource("2_hjnwv")
+25:0/0 = 0
+26:0/0 = 0
+27:0/0 = 0
+1:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+25:3/0 = 0
+26:3/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+22:4/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:4/0 = 0
+7:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dhygf"]
+sources/1 = SubResource("TileSetAtlasSource_oi1tn")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0l5od"]
+size = Vector2(144, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jya8g"]
+size = Vector2(144, 10)
+
+[node name="tronc_desap" type="Area2D"]
+script = ExtResource("1_7c3wk")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD//wAAAQAHAAEAAAD//wEAAQAHAAIAAAAAAAAAAQAJAAEAAAAAAAEAAQAJAAIAAAABAAAAAQAMAAEAAAABAAEAAQAMAAIAAAD7/wAAAQADAAEAAAD7/wEAAQADAAIAAAD7/wIAAQADAAMAAAD8/wAAAQAEAAEAAAD8/wEAAQAEAAIAAAD8/wIAAQAEAAMAAAD9/wAAAQAFAAEAAAD9/wEAAQAFAAIAAAD+/wAAAQAGAAEAAAD+/wEAAQAGAAIAAAACAAAAAQANAAEAAAACAAEAAQANAAIAAAADAAAAAQAOAAEAAAADAAEAAQAOAAIAAAAEAAAAAQAPAAEAAAAEAAEAAQAPAAIAAAAEAAIAAQAPAAMAAAAFAAAAAQAQAAEAAAAFAAEAAQAQAAIAAAAFAAIAAQAQAAMAAAA=")
+tile_set = SubResource("TileSet_dhygf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8, 11.5)
+shape = SubResource("RectangleShape2D_0l5od")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 5)
+shape = SubResource("RectangleShape2D_jya8g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

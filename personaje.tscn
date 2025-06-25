@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cq1xtg1s0eclh"]
+[gd_scene load_steps=36 format=3 uid="uid://cq1xtg1s0eclh"]
 
 [ext_resource type="Script" uid="uid://bx0gq2h6le7eh" path="res://character_body_2d.gd" id="1_ltgau"]
 [ext_resource type="Texture2D" uid="uid://dwl2kyoq0wva5" path="res://Assets/personaje/walk1.png" id="2_35kqm"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bcuyivunqsfd4" path="res://Assets/personaje/walk2.png" id="3_1y5k2"]
 [ext_resource type="Texture2D" uid="uid://d3jlq1bq884b7" path="res://Assets/personaje/fall2.png" id="3_pyv6t"]
 [ext_resource type="Texture2D" uid="uid://4tena0ewk6gf" path="res://Assets/personaje/walk3.png" id="4_f8plh"]
+[ext_resource type="Texture2D" uid="uid://btlemt861m8t7" path="res://Assets/personaje/hurt1.png" id="4_y2l4a"]
+[ext_resource type="Texture2D" uid="uid://kh0iqe2qvr1" path="res://Assets/personaje/hurt2.png" id="5_hujys"]
 [ext_resource type="Texture2D" uid="uid://cgpxqeye1q43g" path="res://Assets/personaje/walk4.png" id="5_pqm5q"]
 [ext_resource type="Texture2D" uid="uid://db3u1w2mgdro8" path="res://Assets/personaje/walk5.png" id="6_2vb47"]
 [ext_resource type="Texture2D" uid="uid://07f1vyj82xpc" path="res://Assets/personaje/walk6.png" id="7_xeorn"]
@@ -17,8 +19,18 @@
 [ext_resource type="Texture2D" uid="uid://yxemigsav162" path="res://Assets/personaje/jump2.png" id="15_8huex"]
 [ext_resource type="Texture2D" uid="uid://y0a8m4sxs04a" path="res://Assets/ui/panel-transparent-border-026.png" id="16_wyluk"]
 [ext_resource type="Texture2D" uid="uid://2fsg2l2lyp2f" path="res://Assets/ui/divider-fade-001.png" id="17_n8vmr"]
-[ext_resource type="Texture2D" uid="uid://m67t8g7xcdwq" path="res://Assets/moneda/coinmari.png" id="18_n8vmr"]
-[ext_resource type="Script" uid="uid://u5suj7xateqt" path="res://moneda.gd" id="19_vopn2"]
+[ext_resource type="Texture2D" uid="uid://q35jsy5y5l5u" path="res://Assets/ui/1515-export3-removebg-preview.png" id="20_8huex"]
+[ext_resource type="Texture2D" uid="uid://cgue8rn102ory" path="res://Assets/ui/panel-007.png" id="20_vpyix"]
+[ext_resource type="Texture2D" uid="uid://y8jldy0ft8of" path="res://Assets/ui/panel-transparent-center-019.png" id="21_mcxej"]
+[ext_resource type="Texture2D" uid="uid://beb4tq0x340rq" path="res://Assets/ui/1515-export2-removebg-preview.png" id="21_vpyix"]
+[ext_resource type="Texture2D" uid="uid://bt8nb13mhvsla" path="res://Assets/ui/1515-export-removebg-preview.png" id="22_mcxej"]
+[ext_resource type="Texture2D" uid="uid://cvn6jsb6y3vkv" path="res://Assets/ui/1515-export3-export1-removebg-preview.png" id="22_wiotw"]
+[ext_resource type="Texture2D" uid="uid://dq6vawrkyojlv" path="res://Assets/ui/divider-fade-0010.png" id="24_mcxej"]
+[ext_resource type="Texture2D" uid="uid://bae22n3idiff4" path="res://Assets/ui/divider-005.png" id="25_pe31f"]
+[ext_resource type="Script" uid="uid://ckq55h8u08edv" path="res://ataque_g.gd" id="27_hujys"]
+[ext_resource type="Texture2D" uid="uid://bdi3r5hf71r0l" path="res://Assets/ui/ChatGPT Image 24 jun 2025, 05_37_39 p.m..png" id="27_q2cvw"]
+[ext_resource type="Texture2D" uid="uid://cmk5gtjaa7up8" path="res://Assets/ui/divider-fade-005.png" id="28_x7w2g"]
+[ext_resource type="Texture2D" uid="uid://rrg6ywoa0avv" path="res://Assets/ui/panel-transparent-center-020.png" id="29_x7w2g"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gj0cs"]
 animations = [{
@@ -31,6 +43,17 @@ animations = [{
 }],
 "loop": true,
 "name": &"caida",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_y2l4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hujys")
+}],
+"loop": true,
+"name": &"daño",
 "speed": 5.0
 }, {
 "frames": [{
@@ -89,76 +112,11 @@ animations = [{
 radius = 6.0
 height = 18.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vopn2"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="CircleShape2D" id="CircleShape2D_585sv"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3rvlt"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cgtbb"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8huex"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpyix"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(0, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mcxej"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pe31f"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(64, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y2l4a"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(96, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hujys"]
-atlas = ExtResource("18_n8vmr")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_585sv"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vopn2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3rvlt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cgtbb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8huex")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vpyix")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mcxej")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pe31f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y2l4a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hujys")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hujys"]
+radius = 11.0
+height = 40.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ltgau")
@@ -167,7 +125,7 @@ script = ExtResource("1_ltgau")
 position = Vector2(1, -15)
 scale = Vector2(0.810976, 0.791667)
 sprite_frames = SubResource("SpriteFrames_gj0cs")
-animation = &"derecha"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ck3sb")
@@ -175,37 +133,163 @@ shape = SubResource("CapsuleShape2D_ck3sb")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(76, -20)
 zoom = Vector2(2, 2)
+process_callback = 0
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Camera2D"]
+[node name="ui" type="CanvasLayer" parent="Camera2D"]
+layer = 20
 
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="vida_tres" type="Sprite2D" parent="Node2D"]
-position = Vector2(-135, -167.6)
-scale = Vector2(0.6, 0.6)
+[node name="vida_tres" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 127.0
+offset_right = 175.0
+offset_bottom = 48.0
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("16_wyluk")
 
-[node name="vida_dos" type="Sprite2D" parent="Node2D"]
-position = Vector2(-165, -167.6)
-scale = Vector2(0.6, 0.6)
+[node name="vida_dos" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 64.0
+offset_right = 112.0
+offset_bottom = 48.0
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("16_wyluk")
 
-[node name="vida_uno" type="Sprite2D" parent="Node2D"]
-position = Vector2(-195, -167.6)
-scale = Vector2(0.6, 0.6)
+[node name="vida_uno" type="TextureRect" parent="Camera2D/ui"]
+offset_right = 48.0
+offset_bottom = 48.0
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("16_wyluk")
 
-[node name="Divider-fade-001" type="Sprite2D" parent="Node2D"]
-position = Vector2(-168, -150.6)
+[node name="Divider-fade-001" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 74.0
+offset_top = -55.0
+offset_right = 170.0
+offset_bottom = -33.0
+rotation = 1.5708
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("17_n8vmr")
 
-[node name="Moneda" type="AnimatedSprite2D" parent="Node2D"]
-position = Vector2(-103, -167)
-sprite_frames = SubResource("SpriteFrames_585sv")
-script = ExtResource("19_vopn2")
+[node name="Divider-fade-002" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 137.0
+offset_top = -55.0
+offset_right = 233.0
+offset_bottom = -33.0
+rotation = 1.5708
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("17_n8vmr")
 
-[node name="MonedaNum" type="Label" parent="Node2D"]
-offset_left = -90.0
-offset_top = -178.0
-offset_right = -50.0
-offset_bottom = -155.0
+[node name="MonedaNum" type="Label" parent="Camera2D/ui"]
+offset_left = 162.0
+offset_top = -60.0
+offset_right = 193.0
+offset_bottom = -37.0
+
+[node name="Panel-007" type="TextureRect" parent="Camera2D/ui"]
+visible = false
+offset_left = -180.0
+offset_top = -118.0
+offset_right = -180.0
+offset_bottom = -118.0
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("20_vpyix")
+
+[node name="Panel-transparent-center-019" type="TextureRect" parent="Camera2D/ui"]
+offset_top = 69.0
+offset_right = 96.0
+offset_bottom = 165.0
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("21_mcxej")
+
+[node name="muerto" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 2.00003
+offset_top = 75.0
+offset_right = 504.0
+offset_bottom = 572.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_wiotw")
+
+[node name="moribundo" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 2.0
+offset_top = 75.0
+offset_right = 504.0
+offset_bottom = 572.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("20_8huex")
+
+[node name="herido" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 2.0
+offset_top = 75.0
+offset_right = 504.0
+offset_bottom = 572.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("21_vpyix")
+
+[node name="sano" type="TextureRect" parent="Camera2D/ui"]
+offset_left = 2.0
+offset_top = 75.0
+offset_right = 504.0
+offset_bottom = 572.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("22_mcxej")
+
+[node name="Divider-005" type="TextureRect" parent="Camera2D/ui"]
+offset_top = 162.0
+offset_right = 192.0
+offset_bottom = 198.0
+texture = ExtResource("25_pe31f")
+
+[node name="Divider-fade-0010" type="TextureRect" parent="Camera2D/ui"]
+offset_left = -5.0
+offset_top = 41.0
+offset_right = 187.0
+offset_bottom = 85.0
+texture = ExtResource("24_mcxej")
+
+[node name="GameOver" type="CanvasLayer" parent="Camera2D/ui"]
+visible = false
+
+[node name="ChatGptImage24Jun2025,053739P_m_" type="TextureRect" parent="Camera2D/ui/GameOver"]
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 1524.0
+offset_bottom = 1224.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("27_q2cvw")
+
+[node name="Divider-fade-005" type="TextureRect" parent="Camera2D/ui/GameOver"]
+offset_left = 535.0
+offset_top = 349.0
+offset_right = 727.0
+offset_bottom = 385.0
+texture = ExtResource("28_x7w2g")
+
+[node name="Divider-fade-006" type="TextureRect" parent="Camera2D/ui/GameOver"]
+offset_left = 674.0
+offset_top = 231.0
+offset_right = 866.0
+offset_bottom = 267.0
+rotation = 3.14159
+texture = ExtResource("28_x7w2g")
+
+[node name="Panel-transparent-center-020" type="TextureRect" parent="Camera2D/ui/GameOver"]
+modulate = Color(0.568627, 0, 0.121569, 0.560784)
+offset_left = -300.0
+offset_top = -245.0
+offset_right = 388.0
+offset_bottom = 321.0
+scale = Vector2(2.55208, 1.97917)
+texture = ExtResource("29_x7w2g")
+
+[node name="AtaqueG" type="Area2D" parent="."]
+script = ExtResource("27_hujys")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AtaqueG"]
+position = Vector2(16, -16)
+shape = SubResource("CircleShape2D_585sv")
+debug_color = Color(0.999496, 0.0199766, 1.15514e-06, 0.42)
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -11)
+shape = SubResource("CapsuleShape2D_hujys")
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]

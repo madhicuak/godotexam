@@ -10,7 +10,6 @@ func _on_body_entered(body: Node2D) -> void:
 				await get_tree().create_timer(.5).timeout
 				queue_free()
 
-
 func PLAT_MOV_DESAP():
 	var tween = create_tween()
 	tween.tween_property(self, "position:x", position.x +2, .1)
