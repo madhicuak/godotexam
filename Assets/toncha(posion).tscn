@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd78qivxneye6"]
+
+[ext_resource type="Script" uid="uid://bbvpb3482c6rc" path="res://Assets/toncha_2d.gd" id="1_tpei7"]
+[ext_resource type="Texture2D" uid="uid://bnhhy2y5fpsir" path="res://Assets/posiones/toncha.png" id="2_a45uf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_emppo"]
+size = Vector2(20, 23)
+
+[node name="toncha(posion)" type="Node2D"]
+
+[node name="toncha2D" type="Area2D" parent="."]
+script = ExtResource("1_tpei7")
+
+[node name="Sprite2D" type="Sprite2D" parent="toncha2D"]
+position = Vector2(0.999999, -2)
+scale = Vector2(0.0529449, 0.0542781)
+texture = ExtResource("2_a45uf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="toncha2D"]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_emppo")
+
+[connection signal="body_entered" from="toncha2D" to="toncha2D" method="_on_body_entered"]

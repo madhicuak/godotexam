@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://cp0mm455prqti"]
+[gd_scene load_steps=23 format=4 uid="uid://cp0mm455prqti"]
 
 [ext_resource type="Texture2D" uid="uid://dp6x76kl7hww4" path="res://Assets/interior/tileset.png" id="1_ypuf3"]
 [ext_resource type="Texture2D" uid="uid://bo2d0ekqnt2w8" path="res://Assets/interior/column.png" id="2_7ejnb"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://m67t8g7xcdwq" path="res://Assets/moneda/coinmari.png" id="7_6w3mh"]
 [ext_resource type="Script" uid="uid://d2enuprw8okyw" path="res://UI.gd" id="7_iqs48"]
 [ext_resource type="PackedScene" uid="uid://dnsdwac6jpiqu" path="res://Assets/interior/plataformainterior.tscn" id="9_2wngq"]
+[ext_resource type="PackedScene" uid="uid://bd78qivxneye6" path="res://Assets/toncha(posion).tscn" id="9_mkh75"]
 [ext_resource type="Script" uid="uid://kvjgavgx788s" path="res://Assets/interior/plataformainterior.gd" id="10_8pdw4"]
 [ext_resource type="PackedScene" uid="uid://be03sbn80opkx" path="res://Assets/interior/plataformainteriordos.tscn" id="10_gv80v"]
 [ext_resource type="PackedScene" uid="uid://bggjfxcctvt3s" path="res://Assets/interior/area_2d.tscn" id="11_ec7fl"]
@@ -694,6 +695,15 @@ position = Vector2(637, 9)
 
 [node name="piso9" parent="Node2D" instance=ExtResource("6_qa63q")]
 position = Vector2(966, 6)
+
+[node name="toncha(posion)" parent="Node2D" instance=ExtResource("9_mkh75")]
+position = Vector2(-288, -18)
+
+[node name="toncha(posion)2" parent="Node2D" instance=ExtResource("9_mkh75")]
+position = Vector2(486, -62)
+
+[node name="toncha(posion)3" parent="Node2D" instance=ExtResource("9_mkh75")]
+position = Vector2(940, -15)
 
 [node name="Node2D2" type="Node2D" parent="."]
 
