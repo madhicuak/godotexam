@@ -66,6 +66,4 @@ libraries = {
 }
 autoplay = "coinM"
 
-[connection signal="area_entered" from="coin2d" to="coin2d" method="_on_area_entered"]
-[connection signal="area_shape_entered" from="coin2d" to="coin2d" method="_on_area_shape_entered"]
 [connection signal="body_entered" from="coin2d" to="coin2d" method="_on_body_entered"]

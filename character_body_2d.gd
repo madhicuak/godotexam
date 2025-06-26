@@ -8,6 +8,8 @@ var ultima_direccion = 1
 var vidas = 3
 var puede_moverse := true
 var recibe_daño := false
+var monedas := 0
+@onready var label_monedas: Label = $Camera2D/ui/MonedaNum
 
 
 func _ready():
@@ -104,6 +106,9 @@ func AnimVidas():
 	else:
 		pass
 
+func agregar_moneda():
+	monedas += 1
+	label_monedas.text = str(monedas)
 
 func _on_reset_body_entered(body: Node2D) -> void:
 	vidas -=3

@@ -23,7 +23,7 @@
 [ext_resource type="PackedScene" path="res://escenas/tronc_desap.tscn" id="16_ipcn5"]
 [ext_resource type="Texture2D" uid="uid://btkh7j30ih8xl" path="res://Assets/Exterior/parallax/sky.png" id="17_d7jy4"]
 [ext_resource type="Texture2D" uid="uid://dyrhw6pvout50" path="res://Assets/Exterior/parallax/mid-layer-01.png" id="17_wbbs4"]
-[ext_resource type="PackedScene" uid="uid://ctg6el7xrlbb5" path="res://escenas/npc.tscn" id="18_knn22"]
+[ext_resource type="PackedScene" path="res://escenas/npc.tscn" id="18_knn22"]
 [ext_resource type="Texture2D" uid="uid://cugoxqdv784lf" path="res://Assets/Exterior/parallax/mid-layer-02.png" id="18_wbbs4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j02nt"]
