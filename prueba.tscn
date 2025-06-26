@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://drdswhrj4qdxn"]
+[gd_scene load_steps=6 format=3 uid="uid://drdswhrj4qdxn"]
 
 [ext_resource type="PackedScene" uid="uid://erbha0lgeowl" path="res://escenas/piso.tscn" id="1_ik4qs"]
 [ext_resource type="PackedScene" uid="uid://cq1xtg1s0eclh" path="res://personaje.tscn" id="2_rc13i"]
 [ext_resource type="PackedScene" uid="uid://bd78qivxneye6" path="res://Assets/toncha(posion).tscn" id="3_rcdd3"]
+[ext_resource type="PackedScene" uid="uid://cvl3c75g04358" path="res://coin.tscn" id="4_i5a71"]
+[ext_resource type="PackedScene" uid="uid://cxkxf06vj08xy" path="res://Enemigos/enemigos_good.tscn" id="5_i2p14"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,7 +15,14 @@ position = Vector2(458, 267)
 position = Vector2(611, 267)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_rc13i")]
-position = Vector2(394, 242)
+position = Vector2(442, 233)
 
 [node name="toncha(posion)" parent="." instance=ExtResource("3_rcdd3")]
-position = Vector2(449, 248)
+position = Vector2(505, 231)
+
+[node name="coin" parent="." instance=ExtResource("4_i5a71")]
+position = Vector2(584, 219)
+
+[node name="Enemigos_good" parent="." instance=ExtResource("5_i2p14")]
+position = Vector2(543, 225)
+type = 3

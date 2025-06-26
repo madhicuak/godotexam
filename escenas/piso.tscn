@@ -1,11 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://erbha0lgeowl"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6g1k"]
-radius = 5.0
-height = 172.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6g1k"]
+size = Vector2(10, 172)
 
 [node name="piso" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
-shape = SubResource("CapsuleShape2D_t6g1k")
+shape = SubResource("RectangleShape2D_t6g1k")

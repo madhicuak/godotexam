@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bd78qivxneye6"]
 
 [ext_resource type="Script" uid="uid://bbvpb3482c6rc" path="res://Assets/toncha_2d.gd" id="1_tpei7"]
-[ext_resource type="Texture2D" uid="uid://bnhhy2y5fpsir" path="res://Assets/posiones/toncha.png" id="2_a45uf"]
+[ext_resource type="Texture2D" uid="uid://503y26rs8n6v" path="res://Assets/posiones/healing_potion.png" id="2_tpei7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_emppo"]
-size = Vector2(20, 23)
+[sub_resource type="CircleShape2D" id="CircleShape2D_a45uf"]
+radius = 21.0238
 
 [node name="toncha(posion)" type="Node2D"]
 
@@ -12,12 +12,12 @@ size = Vector2(20, 23)
 script = ExtResource("1_tpei7")
 
 [node name="Sprite2D" type="Sprite2D" parent="toncha2D"]
-position = Vector2(0.999999, -2)
-scale = Vector2(0.0529449, 0.0542781)
-texture = ExtResource("2_a45uf")
+position = Vector2(5.96046e-08, -1)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_tpei7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="toncha2D"]
-position = Vector2(-1, -1)
-shape = SubResource("RectangleShape2D_emppo")
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_a45uf")
 
 [connection signal="body_entered" from="toncha2D" to="toncha2D" method="_on_body_entered"]

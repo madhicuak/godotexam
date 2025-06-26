@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cq1xtg1s0eclh"]
+[gd_scene load_steps=55 format=3 uid="uid://cq1xtg1s0eclh"]
 
 [ext_resource type="Script" uid="uid://bx0gq2h6le7eh" path="res://character_body_2d.gd" id="1_ltgau"]
 [ext_resource type="Texture2D" uid="uid://dwl2kyoq0wva5" path="res://Assets/personaje/walk1.png" id="2_35kqm"]
@@ -38,10 +38,16 @@
 [ext_resource type="Texture2D" uid="uid://cvn6jsb6y3vkv" path="res://Assets/ui/1515-export3-export1-removebg-preview.png" id="22_wiotw"]
 [ext_resource type="Texture2D" uid="uid://dq6vawrkyojlv" path="res://Assets/ui/divider-fade-0010.png" id="24_mcxej"]
 [ext_resource type="Texture2D" uid="uid://bae22n3idiff4" path="res://Assets/ui/divider-005.png" id="25_pe31f"]
+[ext_resource type="Texture2D" uid="uid://coxx3gt3015gc" path="res://Enemigos/Explosion/Enemy-Death1.png" id="27_h43m4"]
 [ext_resource type="Script" uid="uid://ckq55h8u08edv" path="res://ataque_g.gd" id="27_hujys"]
-[ext_resource type="Texture2D" uid="uid://bdi3r5hf71r0l" path="res://Assets/ui/ChatGPT Image 24 jun 2025, 05_37_39 p.m..png" id="27_q2cvw"]
+[ext_resource type="Texture2D" uid="uid://bdi3r5hf71r0l" path="res://Assets/ui/gameover.png" id="27_q2cvw"]
+[ext_resource type="Texture2D" uid="uid://chr3g4qhxokkh" path="res://Enemigos/Explosion/Enemy-Death2.png" id="28_6sw18"]
 [ext_resource type="Texture2D" uid="uid://cmk5gtjaa7up8" path="res://Assets/ui/divider-fade-005.png" id="28_x7w2g"]
+[ext_resource type="Texture2D" uid="uid://6bbg37v50dnu" path="res://Enemigos/Explosion/Enemy-Death3.png" id="29_7qrx2"]
 [ext_resource type="Texture2D" uid="uid://rrg6ywoa0avv" path="res://Assets/ui/panel-transparent-center-020.png" id="29_x7w2g"]
+[ext_resource type="Texture2D" uid="uid://4me5qep60ah2" path="res://Enemigos/Explosion/Enemy-Death4.png" id="30_l2qse"]
+[ext_resource type="Texture2D" uid="uid://cqqee5u7kmu2q" path="res://Enemigos/Explosion/Enemy-Death5.png" id="31_lj84d"]
+[ext_resource type="Texture2D" uid="uid://hecx53mvjom1" path="res://Enemigos/Explosion/Enemy-Death6.png" id="32_ay2ko"]
 [ext_resource type="Texture2D" uid="uid://c6flxy6sswb32" path="res://Assets/moneda/coinmari_ui.png" id="39_t5t66"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gj0cs"]
@@ -153,6 +159,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("27_h43m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6sw18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7qrx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_l2qse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_lj84d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ay2ko")
+}],
+"loop": true,
+"name": &"muerte",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("14_cgtbb")
 }, {
 "duration": 1.0,
@@ -165,7 +194,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ck3sb"]
 radius = 6.0
-height = 18.0
+height = 40.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_83km4"]
 font_size = 40
@@ -175,8 +204,8 @@ outline_size = 4
 [sub_resource type="CircleShape2D" id="CircleShape2D_585sv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hujys"]
-radius = 11.0
-height = 40.0
+radius = 9.0
+height = 42.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ltgau")
@@ -185,9 +214,10 @@ script = ExtResource("1_ltgau")
 position = Vector2(1, -15)
 scale = Vector2(0.810976, 0.791667)
 sprite_frames = SubResource("SpriteFrames_gj0cs")
-animation = &"derecha"
+animation = &"muerte"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -11)
 shape = SubResource("CapsuleShape2D_ck3sb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -317,7 +347,7 @@ texture = ExtResource("39_t5t66")
 [node name="GameOver" type="CanvasLayer" parent="Camera2D/ui"]
 visible = false
 
-[node name="ChatGptImage24Jun2025,053739P_m_" type="TextureRect" parent="Camera2D/ui/GameOver"]
+[node name="gameover" type="TextureRect" parent="Camera2D/ui/GameOver"]
 offset_left = 500.0
 offset_top = 200.0
 offset_right = 1524.0
@@ -357,10 +387,11 @@ position = Vector2(16, -16)
 shape = SubResource("CircleShape2D_585sv")
 debug_color = Color(0.999496, 0.0199766, 1.15514e-06, 0.42)
 
-[node name="Hitbox" type="Area2D" parent="."]
+[node name="Hitbox" type="Area2D" parent="." groups=["hitbox"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(0, -11)
 shape = SubResource("CapsuleShape2D_hujys")
+debug_color = Color(0.835798, 0.385763, 0.0978493, 0.42)
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]

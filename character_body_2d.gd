@@ -5,10 +5,11 @@ var brinco = -400
 var gravedad = 1000
 @onready var sprite = $AnimatedSprite2D
 var ultima_direccion = 1  
-var vidas = 1
+var vidas = 3
 var puede_moverse := true
 var recibe_daño := false
 var monedas := 0
+var invulnerable := false
 @onready var label_monedas: Label = $Camera2D/ui/MonedaNum
 
 
@@ -16,7 +17,8 @@ func _ready():
 	add_to_group("jugador")
 	AnimVidas()
 	$Camera2D/ui/GameOver.visible = false
-
+	set_physics_process(true)
+	$"Camera2D/ui/Panel-transparent-center-019".modulate.a = 0.5
 
 func _physics_process(delta):
 	if puede_moverse:
@@ -58,9 +60,12 @@ func actualizar_animaciones(direccion):
 
 
 func ReducirVidas() -> void:
-	if vidas > 1:
+	if invulnerable == true:
+		return
+	if vidas > 1 and invulnerable == false:
 		vidas -= 1
 		AnimVidas()
+		invulnerable = true
 		puede_moverse = false
 		recibe_daño = true
 		sprite.play("daño")
@@ -68,14 +73,18 @@ func ReducirVidas() -> void:
 		await get_tree().create_timer(0.3).timeout
 		recibe_daño = false
 		puede_moverse = true
+		invulnerable = false
 	else:
 		vidas -= 1
 		puede_moverse = false
-		AnimVidas()
-		sprite.play("daño")
-		velocity = Vector2(-ultima_direccion * 500, -100)
 		$Camera2D/ui/GameOver.visible = true
-		await get_tree().create_timer(2.0).timeout
+		AnimVidas()
+		velocity = Vector2(-ultima_direccion * 300, -100)
+		set_physics_process(false)
+		sprite.play("daño")
+		await get_tree().create_timer(0.2).timeout
+		sprite.play("muerte")
+		await get_tree().create_timer(1.8).timeout
 		get_tree().reload_current_scene()
 
 
@@ -111,12 +120,17 @@ func agregar_moneda():
 	label_monedas.text = str(monedas)
 
 func _on_reset_body_entered(body: Node2D) -> void:
-	vidas -=3
+	vidas -= 3
 	ReducirVidas()
 
 func _on_puerta_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("")
+	get_tree().change_scene_to_file("res://Assets/interior/node_2d.tscn")
 
 func _on_hitbox_area_entered(area: Area2D) -> void:
 	if area.is_in_group("dmgbox"):
+		ReducirVidas()
+
+func _on_murci_area_entered(body: Area2D) -> void:
+	if body.is_in_group("jugador"):
+		vidas -= 3
 		ReducirVidas()

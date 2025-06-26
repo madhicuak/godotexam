@@ -1,11 +1,37 @@
-[gd_scene load_steps=11 format=3 uid="uid://cxkxf06vj08xy"]
+[gd_scene load_steps=37 format=3 uid="uid://cxkxf06vj08xy"]
 
 [ext_resource type="Script" uid="uid://yh7rsn52u5ef" path="res://enemigos_good.gd" id="1_euctt"]
 [ext_resource type="Texture2D" uid="uid://capqp61u7k1y5" path="res://icon.svg" id="2_tiqiw"]
+[ext_resource type="Texture2D" uid="uid://coxx3gt3015gc" path="res://Enemigos/Explosion/Enemy-Death1.png" id="3_07k7n"]
 [ext_resource type="Texture2D" uid="uid://bjedrx6sy42sb" path="res://Enemigos/walk thing/thing1.png" id="3_327pm"]
 [ext_resource type="Texture2D" uid="uid://bd6t5wou4yyux" path="res://Enemigos/walk thing/thing2.png" id="4_fh1kn"]
+[ext_resource type="Texture2D" uid="uid://chr3g4qhxokkh" path="res://Enemigos/Explosion/Enemy-Death2.png" id="4_u4oxn"]
 [ext_resource type="Texture2D" uid="uid://blqj6ix8lvl1e" path="res://Enemigos/walk thing/thing3.png" id="5_d0wly"]
+[ext_resource type="Texture2D" uid="uid://6bbg37v50dnu" path="res://Enemigos/Explosion/Enemy-Death3.png" id="5_njmlm"]
 [ext_resource type="Texture2D" uid="uid://dgfwyepeitrwf" path="res://Enemigos/walk thing/thing4.png" id="6_2lbax"]
+[ext_resource type="Texture2D" uid="uid://4me5qep60ah2" path="res://Enemigos/Explosion/Enemy-Death4.png" id="6_nxxir"]
+[ext_resource type="Texture2D" uid="uid://cqqee5u7kmu2q" path="res://Enemigos/Explosion/Enemy-Death5.png" id="7_nx5iv"]
+[ext_resource type="Texture2D" uid="uid://hecx53mvjom1" path="res://Enemigos/Explosion/Enemy-Death6.png" id="8_dt85o"]
+[ext_resource type="Texture2D" uid="uid://vojdf4vc30sr" path="res://Enemigos/Flying/Ghost1.png" id="9_7srmg"]
+[ext_resource type="Texture2D" uid="uid://ba37uamjy46bm" path="res://Enemigos/Flying/Ghost2.png" id="10_esfkw"]
+[ext_resource type="Texture2D" uid="uid://ctrcy0nn7q8lo" path="res://Enemigos/Flying/Ghost3.png" id="11_tl6j6"]
+[ext_resource type="Texture2D" uid="uid://bvw2jtifq3fyr" path="res://Enemigos/Flying/Ghost4.png" id="12_kta5x"]
+[ext_resource type="Texture2D" uid="uid://cfhreoqn4d2oh" path="res://Enemigos/Explosion/v2/burning-ghoul1.png" id="13_jtnv7"]
+[ext_resource type="Texture2D" uid="uid://dhb2ors7bist1" path="res://Enemigos/Explosion/v2/burning-ghoul2.png" id="14_omuem"]
+[ext_resource type="Texture2D" uid="uid://vxyre0a73llg" path="res://Enemigos/Explosion/v2/burning-ghoul3.png" id="15_nw47w"]
+[ext_resource type="Texture2D" uid="uid://duefw57hcvuiy" path="res://Enemigos/Explosion/v2/burning-ghoul4.png" id="16_lkify"]
+[ext_resource type="Texture2D" uid="uid://b6k3yrq3dc557" path="res://Enemigos/Explosion/v2/burning-ghoul5.png" id="17_wnv74"]
+[ext_resource type="Texture2D" uid="uid://b871mb07w8hl4" path="res://Enemigos/Explosion/v2/burning-ghoul6.png" id="18_ao11a"]
+[ext_resource type="Texture2D" uid="uid://ot4tv8vs7sfb" path="res://Enemigos/Explosion/v2/burning-ghoul7.png" id="19_6vyee"]
+[ext_resource type="Texture2D" uid="uid://cpbfad6fe6ng6" path="res://Enemigos/Explosion/v2/burning-ghoul8.png" id="20_6mi4q"]
+[ext_resource type="Texture2D" uid="uid://dpvqns52vksrm" path="res://Enemigos/walk-clothed/skeleton-clothed-1.png" id="25_u2mgl"]
+[ext_resource type="Texture2D" uid="uid://bmnuhufbqf5ee" path="res://Enemigos/walk-clothed/skeleton-clothed-2.png" id="26_hns8f"]
+[ext_resource type="Texture2D" uid="uid://dwb8tnfcbmmqu" path="res://Enemigos/walk-clothed/skeleton-clothed-3.png" id="27_cqb7n"]
+[ext_resource type="Texture2D" uid="uid://c0hjxgdlh3bhi" path="res://Enemigos/walk-clothed/skeleton-clothed-4.png" id="28_xcc7m"]
+[ext_resource type="Texture2D" uid="uid://82nho3dycfxf" path="res://Enemigos/walk-clothed/skeleton-clothed-5.png" id="29_ibnnp"]
+[ext_resource type="Texture2D" uid="uid://bn1ecgj7smav6" path="res://Enemigos/walk-clothed/skeleton-clothed-6.png" id="30_f5b50"]
+[ext_resource type="Texture2D" uid="uid://dmau3q7qt7te8" path="res://Enemigos/walk-clothed/skeleton-clothed-7.png" id="31_omvgm"]
+[ext_resource type="Texture2D" uid="uid://cjobk273i8opj" path="res://Enemigos/walk-clothed/skeleton-clothed-8.png" id="32_8b26b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q5m73"]
 
@@ -18,6 +44,75 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_07k7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u4oxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_njmlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nxxir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nx5iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dt85o")
+}],
+"loop": true,
+"name": &"die",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_7srmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_esfkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tl6j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kta5x")
+}],
+"loop": true,
+"name": &"ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_jtnv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_omuem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nw47w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lkify")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wnv74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ao11a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6vyee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6mi4q")
+}],
+"loop": true,
+"name": &"ghoul",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -35,6 +130,35 @@ animations = [{
 "loop": true,
 "name": &"moco",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_u2mgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hns8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_cqb7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xcc7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ibnnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_f5b50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_omvgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8b26b")
+}],
+"loop": true,
+"name": &"skeleton",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eusj6"]
@@ -50,9 +174,9 @@ script = ExtResource("1_euctt")
 shape = SubResource("CapsuleShape2D_q5m73")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_lsc76")
-animation = &"moco"
+animation = &"ghost"
 
 [node name="hitbox" type="Area2D" parent="."]
 
