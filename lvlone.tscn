@@ -8987,7 +8987,7 @@ z_index = 4
 position = Vector2(205, 251)
 
 [node name="Enemigos_good2" parent="Enemigos" instance=ExtResource("26_l36ep")]
-position = Vector2(948, 27)
+position = Vector2(941, 10)
 type = 1
 
 [node name="Enemigos_good7" parent="Enemigos" instance=ExtResource("26_l36ep")]
@@ -8999,7 +8999,7 @@ position = Vector2(1993, -127)
 type = 1
 
 [node name="Enemigos_good9" parent="Enemigos" instance=ExtResource("26_l36ep")]
-position = Vector2(1716, 31)
+position = Vector2(1723, 15)
 type = 1
 
 [node name="Enemigos_good10" parent="Enemigos" instance=ExtResource("26_l36ep")]
