@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bchjfmr26v2br"
+path="res://.godot/imported/Mighty Final Fight (NES) Music - Round 04 Factory.mp3-3c95b92853e523972efa5c83922659ba.mp3str"
+
+[deps]
+
+source_file="res://Assets/ui/Mighty Final Fight (NES) Music - Round 04 Factory.mp3"
+dest_files=["res://.godot/imported/Mighty Final Fight (NES) Music - Round 04 Factory.mp3-3c95b92853e523972efa5c83922659ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

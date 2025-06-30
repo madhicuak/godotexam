@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cxkxf06vj08xy"]
+[gd_scene load_steps=38 format=3 uid="uid://cxkxf06vj08xy"]
 
 [ext_resource type="Script" uid="uid://yh7rsn52u5ef" path="res://enemigos_good.gd" id="1_euctt"]
 [ext_resource type="Texture2D" uid="uid://capqp61u7k1y5" path="res://icon.svg" id="2_tiqiw"]
@@ -161,6 +161,67 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_07k7n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_jtnv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_omuem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nw47w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lkify")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wnv74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ao11a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6vyee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6mi4q")
+}],
+"loop": true,
+"name": &"ghoul",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_u2mgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hns8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_cqb7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xcc7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ibnnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_f5b50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_omvgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8b26b")
+}],
+"loop": true,
+"name": &"skeleton",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eusj6"]
 size = Vector2(20, 30)
 
@@ -176,7 +237,12 @@ shape = SubResource("CapsuleShape2D_q5m73")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_lsc76")
-animation = &"ghost"
+animation = &"ghoul"
+
+[node name="grandes" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11)
+sprite_frames = SubResource("SpriteFrames_07k7n")
+animation = &"ghoul"
 
 [node name="hitbox" type="Area2D" parent="."]
 
@@ -188,3 +254,5 @@ shape = SubResource("RectangleShape2D_eusj6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dmgbox"]
 shape = SubResource("RectangleShape2D_u5hhi")
 debug_color = Color(0.992915, 0, 0.245263, 0.42)
+
+[node name="Node2D" type="Node2D" parent="."]

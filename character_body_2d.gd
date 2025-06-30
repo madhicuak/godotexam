@@ -16,9 +16,12 @@ var invulnerable := false
 func _ready():
 	add_to_group("jugador")
 	AnimVidas()
+	$musica/musiquita.play()
 	$Camera2D/ui/GameOver.visible = false
+	$Camera2D/ui/end.visible = false
 	set_physics_process(true)
 	$"Camera2D/ui/Panel-transparent-center-019".modulate.a = 0.5
+
 
 func _physics_process(delta):
 	if puede_moverse:
@@ -69,24 +72,42 @@ func ReducirVidas() -> void:
 		puede_moverse = false
 		recibe_daño = true
 		sprite.play("daño")
-		velocity = Vector2(-ultima_direccion * 200, -100)
+		velocity = Vector2(-ultima_direccion * 250, -100)
 		await get_tree().create_timer(0.3).timeout
 		recibe_daño = false
 		puede_moverse = true
+		AnimDaño()
+		await get_tree().create_timer(0.2).timeout
 		invulnerable = false
 	else:
 		vidas -= 1
-		puede_moverse = false
+		$musica/musiquita.stop()
+		$musica/gameover.play()
 		$Camera2D/ui/GameOver.visible = true
 		AnimVidas()
-		velocity = Vector2(-ultima_direccion * 300, -100)
+		puede_moverse = false
+		invulnerable = true
 		set_physics_process(false)
 		sprite.play("daño")
-		await get_tree().create_timer(0.2).timeout
+		await get_tree().create_timer(0.5).timeout
 		sprite.play("muerte")
-		await get_tree().create_timer(1.8).timeout
+		await get_tree().create_timer(1.0).timeout
+		sprite.visible = false
+		await get_tree().create_timer(2.5).timeout
 		get_tree().reload_current_scene()
 
+func AnimDaño():
+	sprite.visible = false
+	await get_tree().create_timer(0.1).timeout
+	sprite.visible = true
+	await get_tree().create_timer(0.1).timeout
+	sprite.visible = false
+	await get_tree().create_timer(0.1).timeout
+	sprite.visible = true
+	await get_tree().create_timer(0.1).timeout
+	sprite.visible = false
+	await get_tree().create_timer(0.1).timeout
+	sprite.visible = true
 
 func AnimVidas():
 	if vidas == 3:
@@ -119,18 +140,67 @@ func agregar_moneda():
 	monedas += 1
 	label_monedas.text = str(monedas)
 
+func total_mon():
+	$Camera2D/ui/end.visible = true
+	$Camera2D/ui/end/Total_monedas.text = "Monedas obtenidas: %d" % monedas
+	$Camera2D/ui/end/monedas_nivel.text = "26 monedas en el nivel"
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = false
+	await get_tree().create_timer(0.15).timeout
+	$Camera2D/ui/end/monedas_nivel.visible = true
+
+
 func _on_reset_body_entered(body: Node2D) -> void:
-	vidas -= 3
-	ReducirVidas()
+	if is_in_group("jugador"):
+		vidas -= 3
+		ReducirVidas()
+	else:
+		return
 
 func _on_puerta_body_entered(body: Node2D) -> void:
+	$musica/musiquita.stop()
+	$musica/stage.play()
+	invulnerable = true
+	puede_moverse = false
+	sprite.position = Vector2(5,-30)
+	await get_tree().create_timer(.15).timeout
+	sprite.visible = false
+	total_mon()
+	await get_tree().create_timer(4.35).timeout
 	get_tree().change_scene_to_file("res://Assets/interior/node_2d.tscn")
 
 func _on_hitbox_area_entered(area: Area2D) -> void:
 	if area.is_in_group("dmgbox"):
 		ReducirVidas()
 
-func _on_murci_area_entered(body: Area2D) -> void:
+func _on_murci_body_entered(body: Node2D) -> void:
 	if body.is_in_group("jugador"):
 		vidas -= 3
 		ReducirVidas()

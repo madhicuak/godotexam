@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhjpg2rykcnbq"
+path="res://.godot/imported/Mighty Final Fight Music (NES) - Round Clear.mp3-db06e5f3927137f6406d0dc963a88336.mp3str"
+
+[deps]
+
+source_file="res://Assets/ui/Mighty Final Fight Music (NES) - Round Clear.mp3"
+dest_files=["res://.godot/imported/Mighty Final Fight Music (NES) - Round Clear.mp3-db06e5f3927137f6406d0dc963a88336.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

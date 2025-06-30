@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cq1xtg1s0eclh"]
+[gd_scene load_steps=59 format=3 uid="uid://cq1xtg1s0eclh"]
 
 [ext_resource type="Script" uid="uid://bx0gq2h6le7eh" path="res://character_body_2d.gd" id="1_ltgau"]
 [ext_resource type="Texture2D" uid="uid://dwl2kyoq0wva5" path="res://Assets/personaje/walk1.png" id="2_35kqm"]
@@ -49,6 +49,10 @@
 [ext_resource type="Texture2D" uid="uid://cqqee5u7kmu2q" path="res://Enemigos/Explosion/Enemy-Death5.png" id="31_lj84d"]
 [ext_resource type="Texture2D" uid="uid://hecx53mvjom1" path="res://Enemigos/Explosion/Enemy-Death6.png" id="32_ay2ko"]
 [ext_resource type="Texture2D" uid="uid://c6flxy6sswb32" path="res://Assets/moneda/coinmari_ui.png" id="39_t5t66"]
+[ext_resource type="LabelSettings" uid="uid://d22iitk8g7kbi" path="res://escenas/mon.tres" id="49_6sw18"]
+[ext_resource type="AudioStream" uid="uid://bchjfmr26v2br" path="res://Assets/ui/Mighty Final Fight (NES) Music - Round 04 Factory.mp3" id="50_7qrx2"]
+[ext_resource type="AudioStream" uid="uid://djt6i6i48cuui" path="res://Assets/ui/Mighty Final Fight (NES) Music - Game Over.mp3" id="52_lj84d"]
+[ext_resource type="AudioStream" uid="uid://bhjpg2rykcnbq" path="res://Assets/ui/Mighty Final Fight Music (NES) - Round Clear.mp3" id="53_ay2ko"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gj0cs"]
 animations = [{
@@ -214,7 +218,7 @@ script = ExtResource("1_ltgau")
 position = Vector2(1, -15)
 scale = Vector2(0.810976, 0.791667)
 sprite_frames = SubResource("SpriteFrames_gj0cs")
-animation = &"atk_g"
+animation = &"atk_p"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -11)
@@ -348,25 +352,25 @@ texture = ExtResource("39_t5t66")
 visible = false
 
 [node name="gameover" type="TextureRect" parent="Camera2D/ui/GameOver"]
-offset_left = 500.0
-offset_top = 200.0
-offset_right = 1524.0
-offset_bottom = 1224.0
-scale = Vector2(0.2, 0.2)
+offset_left = 400.0
+offset_top = 150.0
+offset_right = 1424.0
+offset_bottom = 1174.0
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("27_q2cvw")
 
 [node name="Divider-fade-005" type="TextureRect" parent="Camera2D/ui/GameOver"]
-offset_left = 535.0
-offset_top = 349.0
-offset_right = 727.0
-offset_bottom = 385.0
+offset_left = 550.0
+offset_top = 375.0
+offset_right = 742.0
+offset_bottom = 411.0
 texture = ExtResource("28_x7w2g")
 
 [node name="Divider-fade-006" type="TextureRect" parent="Camera2D/ui/GameOver"]
-offset_left = 674.0
-offset_top = 231.0
-offset_right = 866.0
-offset_bottom = 267.0
+offset_left = 560.0
+offset_top = 190.0
+offset_right = 752.0
+offset_bottom = 226.0
 rotation = 3.14159
 texture = ExtResource("28_x7w2g")
 
@@ -378,6 +382,38 @@ offset_right = 388.0
 offset_bottom = 321.0
 scale = Vector2(2.55208, 1.97917)
 texture = ExtResource("29_x7w2g")
+
+[node name="end" type="CanvasLayer" parent="Camera2D/ui"]
+visible = false
+
+[node name="Total_monedas" type="Label" parent="Camera2D/ui/end"]
+offset_left = 350.0
+offset_top = 200.0
+offset_right = 850.0
+offset_bottom = 300.0
+label_settings = ExtResource("49_6sw18")
+
+[node name="monedas_nivel" type="Label" parent="Camera2D/ui/end"]
+offset_left = 350.0
+offset_top = 250.0
+offset_right = 850.0
+offset_bottom = 350.0
+label_settings = ExtResource("49_6sw18")
+
+[node name="Divider-fade-007" type="TextureRect" parent="Camera2D/ui/end"]
+offset_left = 630.0
+offset_top = 210.0
+offset_right = 949.0
+offset_bottom = 246.0
+rotation = 3.14159
+texture = ExtResource("28_x7w2g")
+
+[node name="Divider-fade-008" type="TextureRect" parent="Camera2D/ui/end"]
+offset_left = 529.0
+offset_top = 318.0
+offset_right = 863.0
+offset_bottom = 354.0
+texture = ExtResource("28_x7w2g")
 
 [node name="AtaqueG" type="Area2D" parent="."]
 script = ExtResource("27_hujys")
@@ -393,5 +429,16 @@ debug_color = Color(0.999496, 0.0199766, 1.15514e-06, 0.42)
 position = Vector2(0, -11)
 shape = SubResource("CapsuleShape2D_hujys")
 debug_color = Color(0.835798, 0.385763, 0.0978493, 0.42)
+
+[node name="musica" type="Node2D" parent="."]
+
+[node name="musiquita" type="AudioStreamPlayer2D" parent="musica"]
+stream = ExtResource("50_7qrx2")
+
+[node name="gameover" type="AudioStreamPlayer2D" parent="musica"]
+stream = ExtResource("52_lj84d")
+
+[node name="stage" type="AudioStreamPlayer2D" parent="musica"]
+stream = ExtResource("53_ay2ko")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]

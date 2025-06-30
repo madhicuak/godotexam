@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://cp0mm455prqti"]
+[gd_scene load_steps=40 format=4 uid="uid://cp0mm455prqti"]
 
 [ext_resource type="Texture2D" uid="uid://dp6x76kl7hww4" path="res://Assets/interior/tileset.png" id="1_ypuf3"]
 [ext_resource type="Texture2D" uid="uid://bo2d0ekqnt2w8" path="res://Assets/interior/column.png" id="2_7ejnb"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cvl3c75g04358" path="res://coin.tscn" id="4_7ejnb"]
 [ext_resource type="PackedScene" uid="uid://cq1xtg1s0eclh" path="res://personaje.tscn" id="5_wto2r"]
 [ext_resource type="PackedScene" uid="uid://erbha0lgeowl" path="res://escenas/piso.tscn" id="6_qa63q"]
-[ext_resource type="Texture2D" uid="uid://m67t8g7xcdwq" path="res://Assets/moneda/coinmari.png" id="7_6w3mh"]
 [ext_resource type="Script" uid="uid://d2enuprw8okyw" path="res://UI.gd" id="7_iqs48"]
 [ext_resource type="PackedScene" uid="uid://dnsdwac6jpiqu" path="res://Assets/interior/plataformainterior.tscn" id="9_2wngq"]
 [ext_resource type="PackedScene" uid="uid://bd78qivxneye6" path="res://Assets/toncha(posion).tscn" id="9_mkh75"]
@@ -1020,12 +1019,6 @@ position = Vector2(-408, -13)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
 script = ExtResource("7_iqs48")
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(-402, -170)
-texture = ExtResource("7_6w3mh")
-hframes = 4
-vframes = 4
 
 [node name="Node2D" type="Node2D" parent="."]
 
