@@ -4,6 +4,8 @@
   <img src="https://www.gifcen.com/wp-content/uploads/2023/07/neon-gif-6.gif" />
 </p>
 
+# $${\color{slateblue}Códigos \space relevantes}$$
+
 <details>
   <summary>Código del personaje</summary>
   
