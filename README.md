@@ -6,19 +6,15 @@
   <img src="https://media1.tenor.com/m/DqyyEmRmJK0AAAAC/flowers-cherry-blossom.gif" />
 </p>
 
-<h3 align="center">$${\color{slateblue}El \space juego \space es \space un \space pequeño \space plataformero \space inspirado \space en \space clásicos \space del \space género, \space claramente \space bebiendo \space mayoritariamente \space de \space los \space juegos \space de \space Castlevania}$$</h3>
+<h3 align="center">
+$${\color{slateblue}El \space juego \space es \space un \space pequeño \space plataformero \space inspirado \space en \space clásicos \space del \space género, \space claramente \space bebiendo \space mayoritariamente \space de \space los}$$
+$${\color{slateblue}juegos \space de \space Castlevania \space (sobre \space todo \space los \space de \space la \space game \space boy \space advance). \space Una \space mecánica \space que \space predomina \space en \space el}$$
+$${\color{slateblue}primer \space nivel \space es \space la \space urgencia \space por \space alcanzar \space la \space finalidad \space del \space mapa \space a \space la \space derecha, \space para \space escapar}$$
+$${\color{slateblue}de \space un \space muro \space de \space murciélagos. \space De \space ahí \space lo \space "runner", \space además \space el \space camino \space está \space habitado \space por}$$
+$${\color{slateblue}criaturas \space del \space averno, \space que \space complicarán \space la \space huída \space de \space nuestro \space personaje.}$$
+$${\color{slateblue}}$$
+</h3>
 
-$${\color{slateblue} \space (sobre \space todo \space los \space de \space la \space game \space boy \space advance).}$$
-
-$${\color{slateblue}Una \space mecánica \space que \space predomina \space en \space el \space primer \space nivel \space es \space la \space urgencia \space por \space alcanzar \space la \space finalidad \space del \space mapa}$$
-
-$${\color{slateblue} \space a \space la \space derecha, \space para \space escapar \space de \space un \space muro \space de \space murciélagos.}$$
-
-$${\color{slateblue}De \space ahí \space lo \space "runner", \space además \space el \space camino \space está \space habitado \space por \space criaturas \space del \space averno,}$$
-
-$${\color{slateblue}que \space complicarán \space la \space huída \space de \space nuestro \space personaje.}$$
-
-<h3 align="center">$${\color{slateblue}}$$</h3>
 
 
 
