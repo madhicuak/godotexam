@@ -1,7 +1,7 @@
 # $${\color{slateblue}RUNNERVANIA}$$
 
 <p align="center">
-  <img src="https://www.gifcen.com/wp-content/uploads/2023/07/neon-gif-6.gif" />
+  <img src="[https://www.gifcen.com/wp-content/uploads/2023/07/neon-gif-6.gif](https://media.tenor.com/bhxZ5O_Xnq8AAAAj/page-divider-glittery.gif)" />
 </p>
 
 # $${\color{slateblue}Códigos \space relevantes}$$
