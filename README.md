@@ -1,4 +1,4 @@
-# $${\color{slateblue}RUNNERVANIA}$$ <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" />
+# <h1 align="center"><img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /> $${\color{slateblue}RUNNERVANIA}$$ <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /></h1>
 
 <p align="center">
   <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" />
