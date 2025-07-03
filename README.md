@@ -12,10 +12,10 @@ urgencia \space por \space alcanzar \space la \space finalidad \space del \space
   además \space el \space camino \space está \space habitado \space por \space criaturas \space del \space averno \space que \space complicarán \space la \space huída \space a \space nuestro \space personaje.}$$</h3>
 
 
-  $${\color{slateblue}Esta \space unidad \space sirvió \space para \space conocer \space y \space aplicar \space lo \space que \space es \space un \space algoritmo,\space además \space de \space utilizar \space matemática}$
-  $${\color{slateblue}básica \space para \space lidiar \space con \space problemas \space de \space relativa \space sencillez, \space aquí \space el \space programa \space PSeInt \space dejó \space de \space ser}$
-  $${\color{slateblue}desconocido \space para \space nosotros.}$
-  $${\color{slateblue}}$
+$${\color{slateblue}Esta \space unidad \space sirvió \space para \space conocer \space y \space aplicar \space lo \space que \space es \space un \space algoritmo,\space además \space de \space utilizar \space matemática}$$
+$${\color{slateblue}básica \space para \space lidiar \space con \space problemas \space de \space relativa \space sencillez, \space aquí \space el \space programa \space PSeInt \space dejó \space de \space ser}$$
+$${\color{slateblue}desconocido \space para \space nosotros.}$$
+$${\color{slateblue}}$$
 
 
 # <h1 align="center">$${\color{slateblue}Códigos \space relevantes}$$
