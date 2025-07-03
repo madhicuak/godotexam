@@ -7,8 +7,8 @@
 </p>
 
 <h3 align="center">
-$${\color{slateblue}El \space juego \space es \space un \space pequeño \space plataformero \space inspirado \space en \space clásicos \space del \space género, \space claramente \space bebiendo \space mayoritariamente \space de \space los}$$
-$${\color{slateblue}juegos \space de \space Castlevania \space (sobre \space todo \space los \space de \space la \space game \space boy \space advance). \space Una \space mecánica \space que \space predomina \space en \space el}$$
+$${\color{slateblue}El \space juego \space es \space un \space pequeño \space plataformero \space inspirado \space en \space clásicos \space del \space género, \space claramente \space bebiendo \space mayoritariamente \space de}$$
+$${\color{slateblue}los \space juegos \space de \space Castlevania \space (sobre \space todo \space los \space de \space la \space game \space boy \space advance). \space Una \space mecánica \space que \space predomina \space en \space el}$$
 $${\color{slateblue}primer \space nivel \space es \space la \space urgencia \space por \space alcanzar \space la \space finalidad \space del \space mapa \space a \space la \space derecha, \space para \space escapar}$$
 $${\color{slateblue}de \space un \space muro \space de \space murciélagos. \space De \space ahí \space lo \space "runner", \space además \space el \space camino \space está \space habitado \space por}$$
 $${\color{slateblue}criaturas \space del \space averno, \space que \space complicarán \space la \space huída \space de \space nuestro \space personaje.}$$
