@@ -15,9 +15,9 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
 $${\color{slateblue}}$$
 </h3>
 
+# <h1 align="center">$${\color{slateblue}Assets \space y \space audio}$$
 
-
-
+# <h1 align="center">$${\color{slateblue}Escenas}$$
 
 # <h1 align="center">$${\color{slateblue}Códigos \space relevantes}$$
 
@@ -52,6 +52,10 @@ $${\color{slateblue}}$$
   
   Puede ser texto, código, imágenes, etc.
 </details>
+
+# <h1 align="center">$${\color{slateblue}Dificultades}$$
+
+# <h1 align="center">$${\color{slateblue}Conclusión}$$
 
 
 <h1></h1>
