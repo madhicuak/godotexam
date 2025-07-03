@@ -5,9 +5,26 @@
 </p>
 
 <details>
-  <summary>Haz clic aquí para ver más</summary>
+  <summary>Código del personaje</summary>
   
   Aquí va el contenido que quieres ocultar.
   
   Puede ser texto, código, imágenes, etc.
 </details>
+
+<details>
+  <summary>Código de los enemigos</summary>
+  
+  Aquí va el contenido que quieres ocultar.
+  
+  Puede ser texto, código, imágenes, etc.
+</details>
+
+<details>
+  <summary>Miscelaneos</summary>
+  
+  Aquí va el contenido que quieres ocultar.
+  
+  Puede ser texto, código, imágenes, etc.
+</details>
+
