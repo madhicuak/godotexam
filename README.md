@@ -15,7 +15,7 @@
 </details>
 
 <details>
-  <summary>Código de los enemigos</summary>
+  <summary>$${\color{slateblue}Código \space de \space los \space enemigos}$$</summary>
   
   Aquí va el contenido que quieres ocultar.
   
@@ -23,7 +23,7 @@
 </details>
 
 <details>
-  <summary>Miscelaneos</summary>
+  <summary>$${\color{slateblue}Miscelaneos}$$</summary>
   
   Aquí va el contenido que quieres ocultar.
   
