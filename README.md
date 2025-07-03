@@ -14,6 +14,10 @@
   Puede ser texto, código, imágenes, etc.
 </details>
 
+<p align="center">
+  <img src="https://media.tenor.com/bhxZ5O_Xnq8AAAAj/page-divider-glittery.gif" />
+</p>
+
 <details>
   <summary>$${\color{slateblue}Código \space de \space los \space enemigos}$$</summary>
   
@@ -21,6 +25,10 @@
   
   Puede ser texto, código, imágenes, etc.
 </details>
+
+<p align="center">
+  <img src="https://media.tenor.com/bhxZ5O_Xnq8AAAAj/page-divider-glittery.gif" />
+</p>
 
 <details>
   <summary>$${\color{slateblue}Miscelaneos}$$</summary>
