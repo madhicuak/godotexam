@@ -1,8 +1,7 @@
 # <h1 align="center"><img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /> $${\color{slateblue}RUNNERVANIA}$$ <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /></h1>
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/bmxrC5x1kX8AAAAd/taykumix-divider.gif
-" />
+  <img src="https://media1.tenor.com/m/bmxrC5x1kX8AAAAd/taykumix-divider.gif" />
 </p>
 <p align="center">
   <img src="https://media1.tenor.com/m/DqyyEmRmJK0AAAAC/flowers-cherry-blossom.gif" />
