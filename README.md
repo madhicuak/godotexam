@@ -7,7 +7,7 @@
 # $${\color{slateblue}Códigos \space relevantes}$$
 
 <details>
-  <summary>Código del personaje</summary>
+  <summary>$${\color{slateblue}Código \space del \space personaje}$$</summary>
   
   Aquí va el contenido que quieres ocultar.
   
