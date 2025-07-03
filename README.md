@@ -1,5 +1,5 @@
 \begin{center}
-  {\color{slateblue} RUNNERVANIA}
+# {\color{slateblue} RUNNERVANIA}
 \end{center}
 
 <p align="center">
