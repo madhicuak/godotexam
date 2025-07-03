@@ -1,7 +1,7 @@
 # $${\color{slateblue}RUNNERVANIA}$$
 
 <p align="center">
-  <img src="https://media.tenor.com/bhxZ5O_Xnq8AAAAj/page-divider-glittery.gif" />
+  <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" />
 </p>
 
 # $${\color{slateblue}Códigos \space relevantes}$$
