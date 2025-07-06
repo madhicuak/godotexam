@@ -11,7 +11,7 @@ El juego es un pequeño plataformero inspirado en clásicos del género, clarame
 Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la finalidad del mapa a la derecha, para escapar de un muro de murciélagos. De ahí lo "runner", además el camino está habitado por criaturas del averno, que complicarán la huída de nuestro personaje.
 </h3>
 
-# <h1 align="center" style="bold;">$${\color{slateblue}Assets \space y \space audio}$$
+# <h1 align="center" style="bold;">$${\color{slateblue}Assets \space y \space audio}$$</h1>
 
 <h3>$${\color{slateblue}Imágenes}$$</h23>
 <p align="center">
