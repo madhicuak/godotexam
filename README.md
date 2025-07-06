@@ -40,7 +40,7 @@ Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la fi
   <a href="https://youtu.be/wYCdL1TENBI"><img src="https://img.youtube.com/vi/wYCdL1TENBI/mqdefault.jpg" alt="Canción 3" width="30%"></a>
 </div>
 <div align="center">
-  <p>Niveles</p><p>Fin de nivel</p><p>Game Over</p>
+  <p>Niveles           Fin de nivel           Game Over</p>
 </div>
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Escenas}$$
