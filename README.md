@@ -17,6 +17,37 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
 
 # <h1 align="center">$${\color{slateblue}Assets \space y \space audio}$$
 
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvNDI4MDMyLzIxMzkwODkucG5n/original/3XaCEY.png" />
+</p>
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvNDI4MDMyLzEwNjU4ODYzLnBuZw==/original/DTf%2FAx.png" />
+</p>
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvNjQ4MjgvMjkzMDYyLnBuZw==/original/NAoaas.png" />
+</p>
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvNDcyNzM1LzI0MjM2MTkucG5n/original/NQR89B.png" />
+</p>
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvNDcyNzM1LzI0MjM2MjIucG5n/original/3yoH1G.png" />
+</p>
+<p align="center">
+  <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
+</p>
+
+1. Canción 1
+[![Thumbnail Canción 1](https://img.youtube.com/vi/D4uq8p8p_5I/0.jpg)](https://www.youtube.com/watch?v=D4uq8p8p_5I)  
+[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=D4uq8p8p_5I){:target="_blank"}
+
+2. Canción 2
+[![Thumbnail Canción 2](https://img.youtube.com/vi/4fu68WjVJ0o/0.jpg)](https://www.youtube.com/watch?v=4fu68WjVJ0o)  
+[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=4fu68WjVJ0o){:target="_blank"}
+
+3. Canción 3
+[![Thumbnail Canción 3](https://img.youtube.com/vi/wYCdL1TENBI/0.jpg)](https://www.youtube.com/watch?v=wYCdL1TENBI)  
+[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=wYCdL1TENBI){:target="_blank"}
+
 # <h1 align="center">$${\color{slateblue}Escenas}$$
 
 # <h1 align="center">$${\color{slateblue}Códigos \space relevantes}$$
