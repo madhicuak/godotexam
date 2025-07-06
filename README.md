@@ -33,7 +33,7 @@ Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la fi
   <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
 </p>
 
-<h3 align="center">$${\color{Música}$$</h2>
+<h3 align="center">$${\color{Música}$$</h3>
 <div align="center">
   <a href="https://youtu.be/D4uq8p8p_5I"><img src="https://img.youtube.com/vi/D4uq8p8p_5I/mqdefault.jpg" alt="Canción 1" width="30%"></a>
   <a href="https://youtu.be/4fu68WjVJ0o"><img src="https://img.youtube.com/vi/4fu68WjVJ0o/mqdefault.jpg" alt="Canción 2" width="30%"></a>
@@ -83,9 +83,9 @@ Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la fi
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Conclusión}$$
 
-Maria Romano: Tuve dificultad en ejecutar errores, el juego "colisiono" tres veces y tuve que repararlo desde la git bash, tuve dificultad en saber cual era ese error y trabaje en el toda la tarde 
-Al igual que al poner el contador tuve un poco de problemas pues no las agarraba y vi que estaba poniendo mal una función
-Abdiel Pacheco: Yo tuve dificultades en las conexiones de tipo señal, además en un par de ocasiones parecia que el personaje se salía de la  clase "jugador" aún cuándo estabadeclarado directamente en su código y en el editor de godot.
+<p>Maria Romano: Tuve dificultad en ejecutar errores, el juego "colisiono" tres veces y tuve que repararlo desde la git bash, tuve dificultad en saber cual era ese error y trabaje en el toda la tarde 
+Al igual que al poner el contador tuve un poco de problemas pues no las agarraba y vi que estaba poniendo mal una función /n
+Abdiel Pacheco: Yo tuve dificultades en las conexiones de tipo señal, además en un par de ocasiones parecia que el personaje se salía de la  clase "jugador" aún cuándo estabadeclarado directamente en su código y en el editor de godot.<p/>
 
 <h1></h1>
 <p align="center">
