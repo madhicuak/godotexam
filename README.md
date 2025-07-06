@@ -43,6 +43,18 @@
 <h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Escenas</h1>
 
+<h3 align="center" style="color:#708090;">Nivel 1</h3>
+<p>El primer nivel, tiene enemigos, monedas y pociones, además de la distinción del muro de murcielagos que le pone "runner" al nombre del juego.</p>
+<h3 align="center" style="color:#708090;">Nivel 2</h3>
+<p>El segundo nivel, tiene enemigos, monedas y pociones. Además tiene el texto de finalización del juego.</p>
+<h3 align="center" style="color:#708090;">Personaje</h3>
+<p>La escena del personaje contiene la mayoría del código de juego con poco más de 200 líneas, ahí se encuentran contenidas la mayoría de funcionalidades del juego.</p>
+<h3 align="center" style="color:#708090;">Enemigos</h3>
+<p>La escena del personaje contiene la mayoría del código de juego con poco más de 200 líneas, ahí se encuentran contenidas la mayoría de funcionalidades del juego.</p>
+![image](https://github.com/user-attachments/assets/71bfc297-ab57-45f6-88e1-96c7433223f2)
+
+
+
 <h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Códigos relevantes</h1>
 
@@ -91,6 +103,9 @@
 <h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Conclusión</h1>
 Habría sido todo un desastre si no tuvieramos la herramienta Git. Al intercambiar archivos zip de GODOT nos habría tomado hasta horas el migrar los cambios de una computadora a otra. La alternativa era solamente pasar los archivos que fueron alterados, haciendo engorrosa la alteración de los archivos, además que dependía de nuestra memoria el no omitir ningún archivo.
+
+<p></p>
+<p></p>
 
 <p align="center">
   <img src="https://media1.tenor.com/m/bmxrC5x1kX8AAAAd/taykumix-divider.gif" />
