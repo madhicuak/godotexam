@@ -13,7 +13,7 @@ Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la fi
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Assets \space y \space audio}$$
 
-<h2>Imágenes</h2>
+<h3>$${\color{slateblue}Imágenes}$$</h23>
 <p align="center">
   <img src="https://img.itch.zone/aW1hZ2UvNDI4MDMyLzIxMzkwODkucG5n/original/3XaCEY.png" />
 </p>
@@ -33,16 +33,14 @@ Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la fi
   <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
 </p>
 
-<h2>Música</h2>
+<h3 align="center">$${\color{Música}$$</h2>
 <div align="center">
   <a href="https://youtu.be/D4uq8p8p_5I"><img src="https://img.youtube.com/vi/D4uq8p8p_5I/mqdefault.jpg" alt="Canción 1" width="30%"></a>
   <a href="https://youtu.be/4fu68WjVJ0o"><img src="https://img.youtube.com/vi/4fu68WjVJ0o/mqdefault.jpg" alt="Canción 2" width="30%"></a>
   <a href="https://youtu.be/wYCdL1TENBI"><img src="https://img.youtube.com/vi/wYCdL1TENBI/mqdefault.jpg" alt="Canción 3" width="30%"></a>
 </div>
 <div align="center">
-  <p>Niveles</p>
-  <p>Fin de nivel</p>
-  <p>Game Over</p>
+  <p>Niveles</p><p>Fin de nivel</p><p>Game Over</p>
 </div>
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Escenas}$$
