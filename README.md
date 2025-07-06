@@ -1,4 +1,4 @@
-# <h1 align="center"><img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /> $${\color{slateblue}RUNNERVANIA}$$ <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /></h1>
+# <h1 align="center" style="bold;"><img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /> $${\color{slateblue}RUNNERVANIA}$$ <img src="https://media.tenor.com/SrQO6J_VT-4AAAAj/cemetery-divider.gif" /></h1>
 <h3 align="center">$${\color{slateblue}Abdiel \space Josue \space Pacheco \space Robles}$$</h3>
 <h3 align="center">$${\color{slateblue}Maria \space Jose \space Vazquez \space Romano}$$</h3>
 
@@ -15,7 +15,7 @@ $${\color{slateblue}de \space un \space muro \space de \space murciélagos. \spa
 $${\color{slateblue}criaturas \space del \space averno, \space que \space complicarán \space la \space huída \space de \space nuestro \space personaje.}$$
 </h3>
 
-# <h1 align="center">$${\color{slateblue}Assets \space y \space audio}$$
+# <h1 align="center" style="bold;">$${\color{slateblue}Assets \space y \space audio}$$
 
 <p align="center">
   <img src="https://img.itch.zone/aW1hZ2UvNDI4MDMyLzIxMzkwODkucG5n/original/3XaCEY.png" />
@@ -36,23 +36,17 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
   <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
 </p>
 
-## 🎵 Música en YouTube
+## 🎵 Música Favorita
 
-### 1. Canción 1
-[![Thumbnail Canción 1](https://img.youtube.com/vi/D4uq8p8p_5I/0.jpg)](https://www.youtube.com/watch?v=D4uq8p8p_5I)  
-[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=D4uq8p8p_5I){:target="_blank"}
+<div align="center">
+  <a href="https://youtu.be/D4uq8p8p_5I"><img src="https://img.youtube.com/vi/D4uq8p8p_5I/mqdefault.jpg" alt="Canción 1" width="30%"></a>
+  <a href="https://youtu.be/4fu68WjVJ0o"><img src="https://img.youtube.com/vi/4fu68WjVJ0o/mqdefault.jpg" alt="Canción 2" width="30%"></a>
+  <a href="https://youtu.be/wYCdL1TENBI"><img src="https://img.youtube.com/vi/wYCdL1TENBI/mqdefault.jpg" alt="Canción 3" width="30%"></a>
+</div>
 
-### 2. Canción 2
-[![Thumbnail Canción 2](https://img.youtube.com/vi/4fu68WjVJ0o/0.jpg)](https://www.youtube.com/watch?v=4fu68WjVJ0o)  
-[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=4fu68WjVJ0o){:target="_blank"}
+# <h1 align="center" style="bold;">$${\color{slateblue}Escenas}$$
 
-### 3. Canción 3
-[![Thumbnail Canción 3](https://img.youtube.com/vi/wYCdL1TENBI/0.jpg)](https://www.youtube.com/watch?v=wYCdL1TENBI)  
-[▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=wYCdL1TENBI){:target="_blank"}
-
-# <h1 align="center">$${\color{slateblue}Escenas}$$
-
-# <h1 align="center">$${\color{slateblue}Códigos \space relevantes}$$
+# <h1 align="center" style="bold;">$${\color{slateblue}Códigos \space relevantes}$$
 
 <details>
   <summary>$${\color{slateblue}Código \space del \space personaje}$$</summary>
@@ -86,9 +80,9 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
   Puede ser texto, código, imágenes, etc.
 </details>
 
-# <h1 align="center">$${\color{slateblue}Dificultades}$$
+# <h1 align="center" style="bold;">$${\color{slateblue}Dificultades}$$
 
-# <h1 align="center">$${\color{slateblue}Conclusión}$$
+# <h1 align="center" style="bold;">$${\color{slateblue}Conclusión}$$
 
 
 <h1></h1>
