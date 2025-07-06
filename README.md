@@ -16,6 +16,7 @@
   <p>Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la finalidad del mapa a la derecha, para escapar de un muro de murciélagos. De ahí lo "runner", además el camino está habitado por criaturas del averno, que complicarán la huida de nuestro personaje.</p>
 </div>
 
+<h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Assets y audio</h1>
 
 <h3 align="center" style="color:#708090;">Imágenes</h3>
@@ -36,11 +37,13 @@
 </div>
 
 <div align="center">
-  <p>Niveles //////// Fin de nivel /////// Game Over</p>
+  <p>Niveles //////////// Fin de nivel /////////// Game Over</p>
 </div>
 
+<h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Escenas</h1>
 
+<h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Códigos relevantes</h1>
 
 <details>
@@ -75,6 +78,7 @@
   Puede ser texto, código, imágenes, etc.
 </details>
 
+<h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Dificultades</h1>
 
 <div align="center">
@@ -84,8 +88,9 @@
   <p><strong>Abdiel Pacheco:</strong> Yo tuve dificultades en las conexiones de tipo señal, además en un par de ocasiones parecía que el personaje se salía de la clase "jugador" aún cuando estaba declarado directamente en su código y en el editor de Godot.</p>
 </div>
 
+<h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Conclusión</h1>
-
+Habría sido todo un desastre si no tuvieramos la herramienta Git. Al intercambiar archivos zip de GODOT nos habría tomado hasta horas el migrar los cambios de una computadora a otra. La alternativa era solamente pasar los archivos que fueron alterados, haciendo engorrosa la alteración de los archivos, además que dependía de nuestra memoria el no omitir ningún archivo.
 
 <p align="center">
   <img src="https://media1.tenor.com/m/bmxrC5x1kX8AAAAd/taykumix-divider.gif" />
