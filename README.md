@@ -50,10 +50,15 @@
 <h3 align="center" style="color:#708090;">Personaje</h3>
 <p>La escena del personaje contiene la mayoría del código de juego con poco más de 200 líneas, ahí se encuentran contenidas la mayoría de funcionalidades del juego.</p>
 <h3 align="center" style="color:#708090;">Enemigos</h3>
-<p>La escena del personaje contiene la mayoría del código de juego con poco más de 200 líneas, ahí se encuentran contenidas la mayoría de funcionalidades del juego.</p>
-![image](https://github.com/user-attachments/assets/71bfc297-ab57-45f6-88e1-96c7433223f2)
-
-
+<p>La escena de los enemigos es la misma siempre, cambia solamente el tipo de enemigo en formato lista.</p>
+<h3 align="center" style="color:#708090;">Plataformas</h3>
+<p>Lasplataformas del juego son la misma escena copypasteada y con el tilemap/collision cambiadas.</p>
+<h3 align="center" style="color:#708090;">Agua</h3>
+<p>Es la escena necesaria para el efecto de agua animado.</p>
+<h3 align="center" style="color:#708090;">Moneda</h3>
+<p>Escena necesaria para que el jugador pueda recoger monedas.</p>
+<h3 align="center" style="color:#708090;">Poción</h3>
+<p>Escena necesaria para que el jugador pueda recoger pociones y le suba la vida</p>
 
 <h1></h1>
 <h1 align="center" style="font-weight:bold; color:#708090;">Códigos relevantes</h1>
