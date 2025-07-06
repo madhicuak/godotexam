@@ -77,14 +77,15 @@
 
 <h1 align="center" style="font-weight:bold; color:#708090;">Dificultades</h1>
 
-<h1 align="center" style="font-weight:bold; color:#708090;">Conclusión</h1>
-
 <div align="center">
   <p><strong>Maria Romano:</strong> Tuve dificultad en ejecutar errores, el juego "colisionó" tres veces y tuve que repararlo desde la git bash, tuve dificultad en saber cual era ese error y trabajé en el toda la tarde.</p>
   <p>Al igual que al poner el contador tuve un poco de problemas pues no las agarraba y vi que estaba poniendo mal una función.</p>
   
   <p><strong>Abdiel Pacheco:</strong> Yo tuve dificultades en las conexiones de tipo señal, además en un par de ocasiones parecía que el personaje se salía de la clase "jugador" aún cuando estaba declarado directamente en su código y en el editor de Godot.</p>
 </div>
+
+<h1 align="center" style="font-weight:bold; color:#708090;">Conclusión</h1>
+
 
 <p align="center">
   <img src="https://media1.tenor.com/m/bmxrC5x1kX8AAAAd/taykumix-divider.gif" />
