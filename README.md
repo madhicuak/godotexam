@@ -36,15 +36,17 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
   <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
 </p>
 
-1. Canción 1
+## 🎵 Música en YouTube
+
+### 1. Canción 1
 [![Thumbnail Canción 1](https://img.youtube.com/vi/D4uq8p8p_5I/0.jpg)](https://www.youtube.com/watch?v=D4uq8p8p_5I)  
 [▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=D4uq8p8p_5I){:target="_blank"}
 
-2. Canción 2
+### 2. Canción 2
 [![Thumbnail Canción 2](https://img.youtube.com/vi/4fu68WjVJ0o/0.jpg)](https://www.youtube.com/watch?v=4fu68WjVJ0o)  
 [▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=4fu68WjVJ0o){:target="_blank"}
 
-3. Canción 3
+### 3. Canción 3
 [![Thumbnail Canción 3](https://img.youtube.com/vi/wYCdL1TENBI/0.jpg)](https://www.youtube.com/watch?v=wYCdL1TENBI)  
 [▶️ Reproducir en YouTube](https://www.youtube.com/watch?v=wYCdL1TENBI){:target="_blank"}
 
