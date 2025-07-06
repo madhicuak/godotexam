@@ -7,16 +7,13 @@
 </p>
 
 <h3 align="center">
-$${\color{slateblue}El \space juego \space es \space un \space pequeño \space plataformero \space inspirado \space en \space clásicos \space del \space género, \space claramente}$$
-$${\color{slateblue}bebiendo \space mayoritariamente \space de \space los \space juegos \space de \space Castlevania \space (sobre \space todo \space los \space de \space la}$$
-$${\color{slateblue}game \space boy \space advance). \space Una \space mecánica \space que \space predomina \space en \space el}$$
-$${\color{slateblue}primer \space nivel \space es \space la \space urgencia \space por \space alcanzar \space la \space finalidad \space del \space mapa \space a \space la \space derecha, \space para \space escapar}$$
-$${\color{slateblue}de \space un \space muro \space de \space murciélagos. \space De \space ahí \space lo \space "runner", \space además \space el \space camino \space está \space habitado \space por}$$
-$${\color{slateblue}criaturas \space del \space averno, \space que \space complicarán \space la \space huída \space de \space nuestro \space personaje.}$$
+El juego es un pequeño plataformero inspirado en clásicos del género, claramente bebiendo mayoritariamente de los juegos de Castlevania (sobre todo los de la Game Boy Advance). 
+Una mecánica que predomina en el primer nivel es la urgencia por alcanzar la finalidad del mapa a la derecha, para escapar de un muro de murciélagos. De ahí lo "runner", además el camino está habitado por criaturas del averno, que complicarán la huída de nuestro personaje.
 </h3>
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Assets \space y \space audio}$$
 
+<h2>Imágenes</h2>
 <p align="center">
   <img src="https://img.itch.zone/aW1hZ2UvNDI4MDMyLzIxMzkwODkucG5n/original/3XaCEY.png" />
 </p>
@@ -36,12 +33,16 @@ $${\color{slateblue}criaturas \space del \space averno, \space que \space compli
   <img src="https://img.itch.zone/aW1hZ2UvMjYwNTg5Mi8yMDQxNTAxNy5naWY=/original/76cylp.gif" />
 </p>
 
-## 🎵 Música Favorita
-
+<h2>Música</h2>
 <div align="center">
   <a href="https://youtu.be/D4uq8p8p_5I"><img src="https://img.youtube.com/vi/D4uq8p8p_5I/mqdefault.jpg" alt="Canción 1" width="30%"></a>
   <a href="https://youtu.be/4fu68WjVJ0o"><img src="https://img.youtube.com/vi/4fu68WjVJ0o/mqdefault.jpg" alt="Canción 2" width="30%"></a>
   <a href="https://youtu.be/wYCdL1TENBI"><img src="https://img.youtube.com/vi/wYCdL1TENBI/mqdefault.jpg" alt="Canción 3" width="30%"></a>
+</div>
+<div align="center">
+  <p>Niveles</p>
+  <p>Fin de nivel</p>
+  <p>Game Over</p>
 </div>
 
 # <h1 align="center" style="bold;">$${\color{slateblue}Escenas}$$
